@@ -1,0 +1,28 @@
+var Type_of_google_granslate = 0; /* 0: two lines small "translate";  1: one line small "translate"; 2: Ass it was before; */
+
+$(function(){
+    
+    var two_lines_css = function(){
+        $("head").append("<style> .goog-te-gadget { text-align: center;}</style>");
+        $("head").append("<style> .goog-logo-link { font-size: 11px !important; display: block; text-align: center;}</style>");
+    };
+    var one_small_line_center = function(){
+        $("head").append("<style> .goog-te-gadget { text-align: center;}</style>");
+        $("head").append("<style> .goog-logo-link { font-size: 11px !important;}</style>");
+    };
+    var nothing = function(){
+    };
+
+    var styles_arr = [two_lines_css, one_small_line_center, nothing];
+
+    var add_css = styles_arr[Type_of_google_granslate];
+
+    $("#g122").ready(function(){
+        add_css();
+    });
+
+    $("#g133").ready(function(){
+        add_css();
+    });
+});
+

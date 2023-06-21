@@ -1,0 +1,1506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)https://jefjournal.org.za/index.php/jef/article/view/159/573 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Estimation of geometric Brownian motion model with a t-distribution–based particle filter | Nkemnole | Journal of Economic and Financial Sciences</title>
+	<meta name="description" content="The Journal of Economic and Financial Sciences promotes research in auditing, corporate finance, corporate governance, economics, econometrics, financial accounting, financial management, financial planning, investment management, management accounting and taxation in the emerging market field.">
+	<meta name="keywords" content="auditing; corporate finance; corporate governance; economics; econometrics; financial accounting; financial planning; investment management; management accounting and taxation; markets">
+	<meta name="generator" content=" 2.4.8.5">
+	<meta name="google-site-verification" content="O_XhjizkB-hBLAvN7ryE9Uwbm2-qZ1cYr-ikmp0L6ro">
+	<link rel="icon" href="https://jefjournal.org.za/public/journals/1/journalFavicon_en_US.png" type="image/png">	
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+
+	<meta name="DC.Contributor.Sponsor" xml:lang="en" content="">
+	<meta name="DC.Creator.PersonalName" content="Bridget Nkemnole">
+	<meta name="DC.Creator.PersonalName" content="Olaide Abass">
+	<meta name="DC.Date.created" scheme="ISO8601" content="2019-02-21">
+	<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2018-01-24">
+	<meta name="DC.Date.issued" scheme="ISO8601" content="2019-02-07">
+	<meta name="DC.Date.modified" scheme="ISO8601" content="2019-02-21">
+	<meta name="DC.Description" xml:lang="en" content="  Orientation:  Geometric Brownian motion (GBM) model basically suggests whether the distribution of asset returns is normal or lognormal. However, many empirical studies have revealed that return distributions are usually not normal. These studies, time and again, discover evidence of non-normality, such as heavy tails and excess kurtosis.   Research purpose:  This work was aimed at analysing the GBM with a sequential Monte Carlo (SMC) technique based on  t -distribution and compares the distribution with normal distribution.   Motivation for the study:  The SMC or particle filter based on the  t -distribution for the GBM model, which involves randomness, volatility and drift, can precisely capture the aforementioned statistical characteristics of return distributions and can predict the random changes or fluctuation in stock prices.   Research approach/design and method:  The particle filter based on the  t -distribution is developed to estimate the random effects and parameters for the extended model; the mean absolute percentage error (MAPE) were calculated to compare distribution fit. Distribution performance was assessed through simulation study and real data.   Main findings:  Results show that the GBM model based on student’s  t -distribution is empirically more successful than the normal distribution.   Practical/managerial implications:  The proposed model which is heavier tailed than the normal does not only provide an approximate solution to non-normal estimation problem.   Contribution/value-add:  The GBM model based on student’s  t -distribution establishes an efficient structure for GBM and volatility modelling. ">
+	<meta name="DC.Format" scheme="IMT" content="text/html">
+	<meta name="DC.Format" scheme="IMT" content="application/epub+zip">
+	<meta name="DC.Format" scheme="IMT" content="application/xml">
+	<meta name="DC.Format" scheme="IMT" content="application/pdf">
+	<meta name="DC.Identifier" content="159">
+	<meta name="DC.Identifier.pageNumber" content="9 pages">
+						<meta name="DC.Identifier.URI" content="https://jefjournal.org.za/index.php/jef/article/view/159">
+	<meta name="DC.Language" scheme="ISO639-1" content="en">
+	<meta name="DC.Rights" content="Copyright (c) 2019 Bridget Nkemnole, Olaide Abass">
+	<meta name="DC.Rights" content="https://creativecommons.org/licenses/by/4.0">
+	<meta name="DC.Source" content="Journal of Economic and Financial Sciences">
+	<meta name="DC.Source.ISSN" content="2312-2803">
+	<meta name="DC.Source.Issue" content="1">	<meta name="DC.Source.URI" content="https://jefjournal.org.za/index.php/jef">
+	<meta name="DC.Source.Volume" content="12">						<meta name="DC.Subject" xml:lang="en" content="Geometric Brownian motion">
+								<meta name="DC.Subject" xml:lang="en" content="student-t distribution">
+								<meta name="DC.Subject" xml:lang="en" content="normal distribution">
+								<meta name="DC.Subject" xml:lang="en" content="drift">
+								<meta name="DC.Subject" xml:lang="en" content="volatility">
+								<meta name="DC.Subject" xml:lang="en" content="particle filter">
+				<meta name="DC.Title" content="Estimation of geometric Brownian motion model with a t-distribution–based particle filter">
+		<meta name="DC.Type" content="Text.Serial.Journal">
+	<meta name="DC.Type.articleType" content="Original Research">
+
+		<meta name="gs_meta_revision" content="1.1">
+	<meta name="citation_journal_title" content="Journal of Economic and Financial Sciences">
+	<meta name="citation_issn" content="2312-2803">
+        <meta name="citation_author" content="Bridget Nkemnole">
+        <meta name="citation_author_institution" content="Department of Mathematics, University of Lagos">
+        <meta name="citation_author" content="Olaide Abass">
+        <meta name="citation_author_institution" content="Department of Computer Sciences, University of Lagos">
+<meta name="citation_title" content="Estimation of geometric Brownian motion model with a t-distribution–based particle filter">
+
+				<meta name="citation_date" content="2019/02/21">
+	
+	<meta name="citation_volume" content="12">
+	<meta name="citation_issue" content="1">
+
+			<meta name="citation_firstpage" content="9">
+								<meta name="citation_abstract_html_url" content="https://jefjournal.org.za/index.php/jef/article/view/159">
+	<meta name="citation_language" content="en">
+						<meta name="citation_keywords" xml:lang="en" content="Geometric Brownian motion">
+								<meta name="citation_keywords" xml:lang="en" content="student-t distribution">
+								<meta name="citation_keywords" xml:lang="en" content="normal distribution">
+								<meta name="citation_keywords" xml:lang="en" content="drift">
+								<meta name="citation_keywords" xml:lang="en" content="volatility">
+								<meta name="citation_keywords" xml:lang="en" content="particle filter">
+									<meta name="citation_fulltext_html_url" content="https://jefjournal.org.za/index.php/jef/article/view/159/573">
+								<meta name="citation_fulltext_html_url" content="https://jefjournal.org.za/index.php/jef/article/view/159/572">
+								<meta name="citation_fulltext_html_url" content="https://jefjournal.org.za/index.php/jef/article/view/159/574">
+								<meta name="citation_pdf_url" content="https://jefjournal.org.za/index.php/jef/article/download/159/571">
+			
+         <meta name="fulltext_html" content="https://jefjournal.org.za/index.php/jef/article/view/159/573">
+            <meta name="fulltext_html" content="https://jefjournal.org.za/index.php/jef/article/view/159/572">
+            <meta name="fulltext_html" content="https://jefjournal.org.za/index.php/jef/article/view/159/574">
+            <meta name="fulltext_pdf" content="https://jefjournal.org.za/index.php/jef/article/download/159/571">
+   
+	
+        
+        <link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/pkp.css" type="text/css">
+	<!-- <link rel="stylesheet" href="https://jefjournal.org.za/lib/pkp/styles/common.css" type="text/css" />
+	<link rel="stylesheet" href="https://jefjournal.org.za/styles/common.css" type="text/css" />-->
+	<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/compiled.css" type="text/css"> 
+
+	<script type="text/javascript" async="" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/analytics.js.descarga"></script><script type="text/javascript" async="" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/js"></script><script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/jquery.min.js.descarga"></script>
+	<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/jqueryUi.min.js.descarga"></script>
+
+	
+	
+	<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/sidebar.css" type="text/css">	<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/leftSidebar.css" type="text/css">	<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/rightSidebar.css" type="text/css">	<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/bothSidebars.css" type="text/css">	<!-- Default global locale keys for JavaScript -->
+	
+<script type="text/javascript">
+	jQuery.pkp = jQuery.pkp || { };
+	jQuery.pkp.locale = { };
+			
+				jQuery.pkp.locale.form_dataHasChanged = 'The data on this form has changed. Continue anyway?';
+	</script>
+	<!-- Compiled scripts -->
+			
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/jquery.tag-it.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/jquery.cookie.js.descarga"></script>
+
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/fontController.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/general.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/jqueryValidatorI18n.js.descarga"></script>
+
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/Helper.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/ObjectProxy.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/Handler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/LinkActionRequest.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/Feature.js.descarga"></script>
+
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/SiteHandler.js.descarga"></script><!-- Included only for namespace definition -->
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/UrlInDivHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/AutocompleteHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/ExtrasOnDemandHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/FormHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/AjaxFormHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/ClientFormHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/GridHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/LinkActionHandler.js.descarga"></script>
+
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/SearchFormHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/ReportGeneratorFormHandler.js.descarga"></script>
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/LuceneAutocompleteHandler.js.descarga"></script>
+
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/jquery.pkp.js.descarga"></script>
+	
+	<!-- Form validation -->
+	<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/jquery.validate.js.descarga"></script>
+	<script type="text/javascript">
+		<!--
+		// initialise plugins
+		
+		$(function(){
+			jqueryValidatorI18n("https://jefjournal.org.za", "en_US"); // include the appropriate validation localization
+			
+			$(".tagit").live('click', function() {
+				$(this).find('input').focus();
+			});
+		});
+		// -->
+		
+	</script>
+
+		
+	<!-- Add View Port -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add Favicon -->
+
+<link rel="icon" type="img/ico" href="https://jefjournal.org.za/plugins/themes/aosis/images/icons/favicon.ico">
+
+<!-- Add fonts style sheet -->
+<link href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/font-awesome.min.css">
+
+<!-- Add theme style sheet -->
+<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/screen.css" type="text/css">
+<link rel="stylesheet" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/aosis.css" type="text/css">
+<link href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/print.css" media="print" rel="stylesheet" type="text/css">
+
+	
+	
+	<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/relatedItems.js.descarga"></script>
+	<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/inlinePdf.js.descarga"></script>
+	<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/pdfobject.js.descarga"></script>
+
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/m=el_main"></script><style> .goog-te-gadget { text-align: center;}</style><style> .goog-logo-link { font-size: 11px !important; display: block; text-align: center;}</style><style> .goog-te-gadget { text-align: center;}</style><style> .goog-logo-link { font-size: 11px !important; display: block; text-align: center;}</style></head>
+<body id="pkp-common-openJournalSystems" style="position: relative; min-height: 100%; top: 0px;" class="vsc-initialized">
+    <div id="libsearch" class="searchbar">
+
+        <form class="aosis-library-search-form" method="post" name="search" action="https://library.aosis.co.za/index.php/misearch/results" target="_blank"> 
+            <label class="aosis-library-search-field-label" for="query"></label>
+            <input type="hidden" name="isAdvanced" value="1">
+            <input type="text" id="query" name="query" data-name="query" maxlength="255" value="" class="textFild" placeholder="Search AOSIS Library"> 
+            <input type="submit" value="SEARCH" class="button">
+        </form>
+    </div>
+<a id="skip-to-content" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#main">&nbsp;</a>
+<div id="navbar">
+	<ul class="menu" id="main_nav">
+		<li id="home"><a href="https://jefjournal.org.za/index.php/jef/index">Home</a></li>
+		<li id="about"><a href="https://jefjournal.org.za/index.php/jef/about">About</a></li>
+
+					<li id="login"><a href="https://jefjournal.org.za/index.php/jef/login">Login</a></li>
+							<li id="register"><a href="https://jefjournal.org.za/index.php/jef/user/register">Register</a></li>
+												<li id="search"><a href="https://jefjournal.org.za/index.php/jef/search">Search</a></li>
+		
+					<li id="current"><a href="https://jefjournal.org.za/index.php/jef/issue/current">Current</a></li>
+			<li id="archives"><a href="https://jefjournal.org.za/index.php/jef/issue/archive">Archives</a></li>
+		
+					<li id="announcements"><a href="https://jefjournal.org.za/index.php/jef/announcement">Announcements</a></li>
+				
+
+									<li class="navItem" id="navItem-0"><a href="https://aosis.co.za/publishing" target="_blank">About AOSIS</a></li>
+												<li class="navItem" id="navItem-1"><a href="https://aosis.co.za/publishing/scholarly-journals" target="_blank">Journals</a></li>
+												<li class="navItem" id="navItem-2"><a href="https://aosis.co.za/publishing/scholarly-books" target="_blank">Books</a></li>
+						</ul>
+</div>
+<div id="container"><div id="fade" class="black_overlay"></div>
+<div id="header" role="banner">
+<div id="headerTitle">
+
+<h1 style="background-color:#008578">
+	
+	Journal of Economic and Financial Sciences
+	
+</h1>
+</div>
+</div>
+
+<div id="body">
+
+	<div id="sidebar">
+					<div id="leftSidebar" class="slide">
+				
+				
+<div id="sidemenudiv">
+    <ul id="sidemenu">
+        <li id="journalhome"><a href="https://jefjournal.org.za/"><span>Home<span></span></span></a></li>
+        <li id="articles" class="active hassub"><a href="https://jefjournal.org.za/index.php/jef/issue/current"><span>Articles</span></a>
+            <ul>
+                <!--<li><a href="https://jefjournal.org.za/index.php/jef/issue/current"><span>Latest</span></a></li>
+                <li class="last"><a href="https://jefjournal.org.za/index.php/jef/issue/archive"><span>Archives</span></a></li>-->
+                <li><a href="https://jefjournal.org.za/index.php/jef/search/authors"><span>By Author</span></a></li>
+                <li><a href="https://jefjournal.org.za/index.php/jef/issue/archive"><span>By Issues</span></a></li>
+                <li class="last"><a href="https://jefjournal.org.za/index.php/jef/browseSearch/sections"><span>By Section</span></a></li>
+            </ul>
+        </li>
+        <li id="editteam"><a href="https://jefjournal.org.za/index.php/jef/pages/view/editorial-team"><span>Editorial Team</span></a></li>
+        <li id="authors" class="active hassub"><a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#"><span>Authors</span></a>
+            <ul>
+                <li><a href="https://jefjournal.org.za/index.php/jef/pages/view/publication-procedure"><span>Submission Procedures</span></a></li>
+                <li><a href="https://jefjournal.org.za/index.php/jef/pages/view/submission-guidelines#part_1" target="_self"><span>Submission Guidelines</span></a></li>
+                <li><a href="https://jefjournal.org.za/index.php/jef/author"><span>Submit and Track Manuscript</span></a></li>
+                <li><a href="https://jefjournal.org.za/index.php/jef/pages/view/publication-fees"><span>Publication fees</span></a></li>
+                <li class="last"><a href="https://jefjournal.org.za/index.php/jef/pages/view/make-a-payment"><span>Make a payment</span></a></li>
+            </ul>
+        </li>
+        <li id="aboutthejournal" class="active hassub"><a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#"><span>About</span></a>
+            <ul>
+                <li><a href="https://jefjournal.org.za/index.php/jef/pages/view/journal-information"><span>Journal Information</span></a></li>
+                <li class="last"><a href="https://jefjournal.org.za/index.php/jef/pages/view/policies" target="_self"><span>Journal Policies</span></a></li>
+									<li class="last"><a href="https://jefjournal.org.za/index.php/jef/pages/view/faq-page" target="_self"><span>Frequently Asked Questions</span></a></li>
+				                <li><a href="https://jefjournal.org.za/index.php/jef/pages/view/reviewer-guidelines"><span>Reviewer Guidelines</span></a></li>
+
+            </ul>
+        </li>
+                <li id="contactus" class="active hassub"><a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#"><span>Connect</span></a>
+            <ul>
+                <li><a href="https://jefjournal.org.za/index.php/jef/gateway/plugin/WebFeedGatewayPlugin/atom" target="_blank"><span>Article RSS</span></a></li>
+                                <li id="editorialboard" class="last"><a href="https://aosis.myshopify.com/products/journal-of-economic-and-financial-sciences" target="_blank"><span>PURCHASE PHYSICAL COPY</span></a></li>
+                                                                        <li id="contactus"><a href="https://jefjournal.org.za/index.php/jef/login?source=https://jefjournal.org.za/index.php/jef/contactus/email/update%40jefjournal.org.za"><span>Support Enquiry (Login required)</span></a></li>
+                                    				<li><a href="https://aosis.co.za/subscribe.html" target="_blank"><span>Aosis Newsletter</span></a></li>
+            </ul>
+        </li>
+                <li id="twitter-leftsidebar-menu-item"><a href="https://twitter.com/JEFjournal" target="_blank"><span>TWITTER</span></a></li>
+        
+
+    </ul>
+</div><div class="block" id="sidebarUser">
+		<!---	<span class="blockTitle">User</span> --->
+	
+					
+	<!---		<form method="post" action="https://jefjournal.org.za/index.php/jef/login/signIn">
+				<table>
+					<tr>
+						<td><label for="sidebar-username">Username</label></td>
+						<td><input type="text" id="sidebar-username" name="username" value="" size="12" maxlength="32" class="textField" /></td>
+					</tr>
+					<tr>
+						<td><label for="sidebar-password">Password</label></td>
+						<td><input type="password" id="sidebar-password" name="password" value="" size="12" class="textField" /></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox" id="remember" name="remember" value="1" /> <label for="remember">Remember me</label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Login" class="button" /></td>
+					</tr>
+				</table>
+			</form> --->
+			<div id="userloggin">
+			<ul>
+			<li><a class="usrbutton" id="userlogin" href="https://jefjournal.org.za/index.php/jef/login">Login</a></li>
+			<li><a class="usrbutton" id="userregister" href="https://jefjournal.org.za/index.php/jef/user/register">Register</a></li>
+			</ul>
+			</div>
+			</div>
+<div class="block" id="sidebarNavigation">
+
+	<form id="simpleSearchForm" action="https://jefjournal.org.za/index.php/jef/search/search">
+		<table id="simpleSearchInput">
+			<tbody><tr>
+				<td>
+													<!-- <label for="simpleQuery">Search <br /> -->
+					<input placeholder="  Search this journal" type="text" id="simpleQuery" name="simpleQuery" size="25" maxlength="255" value="" class="textField">
+                                        <input type="hidden" name="searchField" value="query">
+                                        <input type="submit" value="Search" class="button">
+					<br>
+					
+								</td>
+			</tr>
+		</tbody></table>
+	</form>
+
+	<br>
+</div>
+
+			</div>
+							<div id="rightSidebar" class="slide">
+				
+				
+ <div class="block" id="sidebarGoogleTranslate">
+	<span class="blockTitle">Translate</span>
+	<div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Widget de traducción de idiomas"><option value="">Seleccionar idioma</option><option value="af">Afrikáans</option><option value="ay">Aimara</option><option value="sq">Albanés</option><option value="de">Alemán</option><option value="am">Amárico</option><option value="ar">Árabe</option><option value="hy">Armenio</option><option value="as">Asamés</option><option value="az">Azerí</option><option value="bm">Bambara</option><option value="bn">Bengalí</option><option value="bho">Bhojpuri</option><option value="be">Bielorruso</option><option value="my">Birmano</option><option value="bs">Bosnio</option><option value="bg">Búlgaro</option><option value="km">Camboyano</option><option value="kn">Canarés</option><option value="ca">Catalán</option><option value="ceb">Cebuano</option><option value="cs">Checo</option><option value="ny">Chichewa</option><option value="zh-CN">Chino (simplificado)</option><option value="zh-TW">Chino (tradicional)</option><option value="si">Cingalés</option><option value="ko">Coreano</option><option value="co">Corso</option><option value="ht">Criollo haitiano</option><option value="hr">Croata</option><option value="da">Danés</option><option value="doi">Dogri</option><option value="sk">Eslovaco</option><option value="sl">Esloveno</option><option value="es">Español</option><option value="eo">Esperanto</option><option value="et">Estonio</option><option value="ee">Ewe</option><option value="fi">Finlandés</option><option value="fr">Francés</option><option value="fy">Frisón</option><option value="gd">Gaélico escocés</option><option value="cy">Galés</option><option value="gl">Gallego</option><option value="ka">Georgiano</option><option value="el">Griego</option><option value="gn">Guaraní</option><option value="gu">Gujarati</option><option value="ha">Hausa</option><option value="haw">Hawaiano</option><option value="iw">Hebreo</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="nl">Holandés</option><option value="hu">Húngaro</option><option value="ig">Igbo</option><option value="ilo">Ilocano</option><option value="id">Indonesio</option><option value="ga">Irlandés</option><option value="is">Islandés</option><option value="it">Italiano</option><option value="ja">Japonés</option><option value="jw">Javanés</option><option value="kk">Kazajo</option><option value="rw">Kiñaruanda</option><option value="ky">Kirguís</option><option value="gom">Konkani</option><option value="kri">Krio</option><option value="ku">Kurdo (kurmanyi)</option><option value="ckb">Kurdo (sorani)</option><option value="lo">Lao</option><option value="la">Latín</option><option value="lv">Letón</option><option value="ln">Lingala</option><option value="lt">Lituano</option><option value="lg">Luganda</option><option value="lb">Luxemburgués</option><option value="mk">Macedonio</option><option value="mai">Maithili</option><option value="ml">Malayalam</option><option value="ms">Malayo</option><option value="dv">Maldivo</option><option value="mg">Malgache</option><option value="mt">Maltés</option><option value="mi">Maorí</option><option value="mr">Maratí</option><option value="mni-Mtei">Meiteilon (manipuri)</option><option value="lus">Mizo</option><option value="mn">Mongol</option><option value="ne">Nepalí</option><option value="no">Noruego</option><option value="or">Odia (oriya)</option><option value="om">Oromo</option><option value="pa">Panyabí</option><option value="ps">Pastún</option><option value="fa">Persa</option><option value="pl">Polaco</option><option value="pt">Portugués</option><option value="qu">Quechua</option><option value="ro">Rumano</option><option value="ru">Ruso</option><option value="sm">Samoano</option><option value="sa">Sánscrito</option><option value="nso">Sepedi</option><option value="sr">Serbio</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="so">Somalí</option><option value="sw">Suajili</option><option value="sv">Sueco</option><option value="su">Sundanés</option><option value="tl">Tagalo</option><option value="th">Tailandés</option><option value="ta">Tamil</option><option value="tt">Tártaro</option><option value="tg">Tayiko</option><option value="te">Telugu</option><option value="ti">Tigriña</option><option value="ts">Tsonga</option><option value="tr">Turco</option><option value="tk">Turcomano</option><option value="ak">Twi</option><option value="uk">Ucraniano</option><option value="ug">Uigur</option><option value="ur">Urdu</option><option value="uz">Uzbeco</option><option value="eu">Vasco</option><option value="vi">Vietnamita</option><option value="xh">Xhosa</option><option value="yi">Yidis</option><option value="yo">Yoruba</option><option value="zu">Zulú</option></select></div>Con la tecnología de <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com/" target="_blank"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Traductor">Traductor</a></span></div></div>
+        <script id="g133" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/translate.php"></script>
+        <script id="g122" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/element.js.descarga"></script>
+        <script src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/addStyleForGoogleTranslate.js.descarga"></script>
+
+</div>
+
+
+<div class="block" id="sidebarRTArticleTools">
+
+	<span class="blockTitle">Article Tools</span>
+			<div class="articleToolItem">
+			<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/abstract.png" class="articleToolIcon" alt=""> <a href="https://jefjournal.org.za/index.php/jef/article/view/159" target="_parent">Abstract</a><br>
+		</div>
+				<div class="articleToolItem">
+			<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/printArticle.png" class="articleToolIcon" alt=""> <a href="javascript:openRTWindow(&#39;https://jefjournal.org.za/index.php/jef/rt/printerFriendly/159/573&#39;);">Print this article</a>
+		</div>
+				<div class="articleToolItem">
+			<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/metadata.png" class="articleToolIcon" alt=""> <a href="javascript:openRTWindow(&#39;https://jefjournal.org.za/index.php/jef/rt/metadata/159/573&#39;);">Indexing metadata</a><br>
+		</div>
+				<div class="articleToolItem">
+			<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/citeArticle.png" class="articleToolIcon" alt=""> <a href="javascript:openRTWindow(&#39;https://jefjournal.org.za/index.php/jef/rt/captureCite/159/573&#39;);">How to cite item</a><br>
+		</div>
+					<div class="articleToolItem">
+			<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/findingReferences.png" class="articleToolIcon" alt=""> <a href="javascript:openRTWindow(&#39;https://jefjournal.org.za/index.php/jef/rt/findingReferences/159/573&#39;);">Finding References</a>
+		</div>
+					<div class="articleToolItem">
+			<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/emailArticle.png" class="articleToolIcon" alt="">
+			Email this article <span style="font-size: 0.8em">(Login required)</span>		</div>
+				<div class="articleToolItem">
+			<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/emailArticle.png" class="articleToolIcon" alt="">
+			Email the author <span style="font-size: 0.8em">(Login required)</span>		</div>
+		</div>
+
+
+<script type="text/javascript">
+	initRelatedItems();
+</script>
+
+
+<div class="block" id="sidebarRTRelatedItems">
+	<span class="blockTitle">Related Items</span>
+		<table width="100%">
+			<tbody><tr>
+				<td valign="top" style="width:26px;">
+					<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/lookupTerms.png" class="articleToolIcon" alt="">
+				</td>
+				<td valign="top">
+					<div id="relatedItems" style="display: none;">
+						<ul class="plain">
+																					<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/103&#39;);">Author's work</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/104&#39;);">Book searches</a></li>
+																																									<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/106&#39;);">Related studies</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/107&#39;);">Relevant portals</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/108&#39;);">Pay-per-view</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/109&#39;);">e-Journals</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/110&#39;);">Databases</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/111&#39;);">Online forums</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/112&#39;);">Government policy</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/113&#39;);">Media reports</a></li>
+																												<li><a href="javascript:openRTWindowWithToolbar(&#39;https://jefjournal.org.za/index.php/jef/rt/context/159/573/114&#39;);">Web search</a></li>
+																			</ul>
+					</div>
+					<div id="toggleRelatedItems">
+						<a id="hideRelatedItems" style="display:none;" href="javascript:void(0)">
+							<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/magnifier_zoom_out.png" alt=""> 
+							Hide
+						</a>
+						<a id="showRelatedItems" href="javascript:void(0)">
+							<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/magnifier_zoom_in.png" alt="">
+							Show all
+						</a>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+</div>
+
+<div class="block custom" id="customblock-partner">
+	<div id="partnerblock">
+<div id="blockhead"><strong><span class="blockTitle">Affiliation</span></strong></div>
+<div id="partnerlogo"><a href="https://www.uj.ac.za/" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto; width: 139px;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/web_sponsorbanner.svg" alt=""></a></div>
+</div>
+</div>	
+			</div>
+           
+             
+			</div>
+
+<div id="main" role="main">
+<div id="smalltoplogo"></div>
+<div id="breadcrumb">
+	<a href="https://jefjournal.org.za/index.php/jef/index" target="_parent">Home</a> <span class="breadsep">▶</span>
+	<a href="https://jefjournal.org.za/index.php/jef/issue/view/28" target="_parent">Vol 12, No 1 (2019)</a> <span class="breadsep">▶</span>	<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573" class="current" target="_parent">Nkemnole</a>
+</div>
+
+<!--<h2>Open Journal Systems</h2>-->
+
+
+<div id="content">
+
+
+
+				
+			
+
+
+
+      
+	  
+	    <meta name="dc.identifier" content="10.4102/jef.v12i1.159">
+            <meta http-equi="content-type" content="text/html; charset=ISO-8859-1">
+                  <style type="text/css">
+                        
+                        
+   body {  font-family: Verdana, sans-serif;  color: #686868;}
+      h4.sec1 {margin: 1.5em 0em 0em 0em; font-family: Verdana;}
+      
+      h1 {margin: .5em 0em .3em 0em; font-family: Verdana; font-size: 14px; color: #8a1f05; font-weight: normal;}
+      h2 {margin: .5em 0em .3em 0em; font-family: Verdana; font-size: 14px; color: #686868; font-weight: bold;}
+      h3 {margin: .5em 0em .3em 0em; font-family: Verdana; font-size: 14px; color: #686868; font-weight: normal;}
+      h4 {margin: .5em 0em .3em 0em; font-family: Verdana;  color: #686868; font-weight: bold;}
+      h5 {margin: .5em 0em .3em 0em; font-family: Verdana;  color: #686868; font-weight: bold; text-decoration: underline;}
+      h6 {margin: .5em 0em .3em 0em; font-family: Verdana; font-size: 11px;}
+      
+      .text {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px}
+      a{
+      text-decoration:none;
+      border: 0px solid;
+      }
+      .wordbr{
+      -ms-word-break: break-all;
+      word-break: break-all;
+      /* Non standard for webkit */
+      word-break: break-word;    
+      }
+      img
+      {
+      border: 0px solid;
+      }
+      
+      #OJP_pub ul.toc {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+      font-size: 14px;
+      font-family: verdana;
+      color: #686868;
+      }
+      
+      #OJP_pub ul.toc b { font-weight: normal;
+      color: #6d6e71;}
+      
+      #OJP_pub td.first {
+      border:0px;
+      width: 27%!important;
+      padding: 0px 8px!important;
+      }
+      
+      
+      #OJP_pub td.first1 {
+      border:0px solid!important;
+      padding: 6px 20px 5px 20px!important;
+      position: relative;
+      } 
+      
+      #OJP_pub td.first1::before {
+      content: "";
+      background: #d6d6d6;
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      width: 1px;
+      top: 22px;
+      }
+      
+      #OJP_pub a.hov {
+      border-left: 3px solid transparent;
+      display: block;
+      padding: 9px 0px 9px 7px;;
+      }
+      
+      #OJP_pub a.hov:hover, #OJP_pub a.hov:active {background: #F0F0E8; border-left: 3px solid #22406e;}      
+      
+      #OJP_pub #OJP_citation, #OJP_pub #OJP_about {
+      border-top: solid 2px #d6d6d6;
+      border-right: solid 2px #d6d6d6;
+      border-bottom: solid 2px #d6d6d6;
+      border-left: solid 2px #d6d6d6;
+      padding: 5px 10px;
+      }
+      
+      #OJP_pub #OJP_citation {margin-bottom: 10px;}
+      
+      #OJP_pub h2 {
+      margin-left: 0!important;
+      }
+      
+      #OJP_pub h5 b {
+      font-weight: normal!important;
+      }
+      
+      #OJP_pub h6 b {
+      font-weight: normal;
+      font-family: verdana;
+      
+      }
+      #OJP_pub .first1 table + div {
+      margin-bottom: 10px;
+      }
+      #OJP_pub .first1 ul li {
+font-size: 11px;
+      }
+      #OJP_pub .first1 td[bgcolor="#f7f7f9"] {
+      
+      }
+      #OJP_pub .first1 table {
+      margin: 3px 0px;
+      }
+      #OJP_pub .first1 img {
+      padding-right: 7px;
+      }
+				  </style>
+				  <meta name="GENERATOR" content="MSHTML 9.00.8112.16636">
+      
+      
+<table class="first" style="border: solid 2px #d6d6d6;" id="OJP_pub" align="center" bgcolor="#ffffff" border="1" cellpadding="0" cellspacing="0" width="100%">
+       <tbody>
+              <tr>
+                  <td class="first" bgcolor="#ffffff" valign="top" width="200px">
+                      <table class="text" width="100%" align="center" border="0" cellpadding="10" cellspacing="0">
+                             
+                                  
+                                         <tbody><tr><td style="height: 90%; width: 180px;" bgcolor="#ffffff">
+                                           <ul class="toc"> <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#2"><b>Abstract</b></a></li>
+ <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#3"><b>Introduction</b></a></li>
+ <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#4"><b>Review of relevant literature</b></a></li>
+ <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#5"><b>Methodology</b></a></li>
+
+
+
+
+
+
+ <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#6"><b>Empirical results and discussion</b></a></li>
+
+
+ <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#7"><b>Conclusion</b></a></li>
+ <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#8"><b>Acknowledgements</b></a></li>
+
+
+ <li><a class="hov" href="https://jefjournal.org.za/index.php/jef/article/view/159/573#9"><b>References</b></a></li>
+</ul><br><div id="OJP_about">
+<b><p style="margin: 0px -5px 0px -5px; padding: 0.5em; border-bottom: 1px solid #d6d6d6;">About the Author(s)</p></b><br>
+
+<span style="font-size: 10px; font-family: verdana, sans-serif; color: #21406e; font-weight: bold;">Bridget Nkemnole </span> <a href="mailto:enkemnole@unilag.edu.ng"><img width="15px" height="10px" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/email.png" alt="Email"></a> <a href="https://orcid.org/0000-0001-7521-2858"><img width="15px" height="10px" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/symbol.png" alt="symbol"></a>
+<br>Department of Mathematics, University of Lagos, Nigeria<br><br>
+
+
+<span style="font-size: 10px; font-family: verdana, sans-serif; color: #21406e; font-weight: bold;">Olaide Abass </span> <a href="https://orcid.org/0000-0001-8602-8327"><img width="15px" height="10px" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/symbol.png" alt="symbol"></a>
+<br>Department of Computer Sciences, University of Lagos, Nigeria
+</div><br><div id="OJP_citation" class="wordbr"><p></p><p style="margin: -10px -5px 0px -5px; border-bottom: 1px solid #d6d6d6;padding:5px;"><b>Citation</b></p><br><span style="font-size: 10px; font-family: verdana; color: #686868"><span style="font-size: 10px; font-family: verdana; color: #686868">
+ Nkemnole, B. &amp; Abass, O., 2019, ʻEstimation of geometric Brownian motion model with a <i>t</i>-distribution–based particle filterʼ, <i>Journal of Economic and Financial Sciences</i> 12(1), a159. <a href="https://doi.org/10.4102/jef.v12i1.159" style="color: #21406e;" target="_base">https://doi.org/10.4102/jef.v12i1.159</a></span></span><p></p></div><table class="text" width="100%" border="0" cellpadding="1" cellspacing="0"><tbody><tr>
+                                                  
+
+
+
+
+     </tr>
+          </tbody>
+                  </table>
+                          </td>
+                               </tr>
+                                    </tbody>
+                                            </table>
+                                                    </td>
+
+<td class="first1" style="padding-left:10px;" bgcolor="#ffffff" valign="top">
+<table class="text" width="100%" align="center" border="0" cellpadding="2" bgcolor="#ffffff" cellspacing="0">
+<tbody>
+<tr>
+<td bgcolor="#ffffff"><a name="1"></a>
+<h1>
+Original Research</h1>
+
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff">
+
+<h2>Estimation of geometric Brownian motion model with a <i>t</i>-distribution–based particle filter</h2>
+</td>
+</tr><tr><td><h4><b> Bridget Nkemnole, Olaide Abass</b></h4><p><b>Received:</b> 24 Jan. 2018; <b>Accepted:</b> 22 Mar. 2018; <b>Published:</b> 21 Feb. 2019</p><p>
+
+<b>Copyright: </b>© 2019. The Author(s). Licensee: AOSIS.<br>
+This is an Open Access article distributed under the terms of the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution License</a>, which permits unrestricted use, distribution,
+and reproduction in any medium, provided the original work is properly cited.
+</p><p style="border-bottom:solid 2px #d6d6d6;"></p></td></tr>
+
+
+
+
+
+
+<tr>
+<td bgcolor="#ffffff"><h4 class="sec1">
+<a name="2"></a><b>Abstract</b>
+</h4>
+<p><b>Orientation:</b> Geometric Brownian motion (GBM) model basically suggests whether the distribution of asset returns is normal or lognormal. However, many empirical studies have revealed that return distributions are usually not normal. These studies, time and again, discover evidence of non-normality, such as heavy tails and excess kurtosis.</p>
+<p><b>Research purpose:</b> This work was aimed at analysing the GBM with a sequential Monte Carlo (SMC) technique based on <i>t</i>-distribution and compares the distribution with normal distribution.</p>
+<p><b>Motivation for the study:</b> The SMC or particle filter based on the <i>t</i>-distribution for the GBM model, which involves randomness, volatility and drift, can precisely capture the aforementioned statistical characteristics of return distributions and can predict the random changes or fluctuation in stock prices.</p>
+<p><b>Research approach/design and method:</b> The particle filter based on the <i>t</i>-distribution is developed to estimate the random effects and parameters for the extended model; the mean absolute percentage error (MAPE) were calculated to compare distribution fit. Distribution performance was assessed through simulation study and real data.</p>
+<p><b>Main findings:</b> Results show that the GBM model based on student’s <i>t</i>-distribution is empirically more successful than the normal distribution.</p>
+<p><b>Practical/managerial implications:</b> The proposed model which is heavier tailed than the normal does not only provide an approximate solution to non-normal estimation problem.</p>
+<p><b>Contribution/value-add:</b> The GBM model based on student’s <i>t</i>-distribution establishes an efficient structure for GBM and volatility modelling.</p>
+<h4 class="sec1">
+<a name="3"></a><b>Introduction</b>
+</h4>
+<p>Most of the models utilised in the description of financial time series are written in terms of a continuous time diffusion <i>S</i><sub><i>t</i></sub> that satisfies the stochastic differential equation (SDE):</p>
+<p><a id="JEF-12-159-E1">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2538-1-PB.jpg"></p>
+<p>where <i>dB</i><sub><i>t</i></sub> ~ <i>N</i>(0,<i>dt</i>) is the increment to Brownian motion process, and <i>σ</i><i>S</i><sub><i>t</i></sub> and <i>μ</i><i>S</i><sub><i>t</i></sub> denote the volatility and drift function, respectively. This class of parametric models has been extensively used to portray the dynamics of financial variables, including stock prices, interest rates and exchange rates. A stochastic process <i>S</i><sub><i>t</i></sub> is said to follow a geometric Brownian motion (GBM) if it satisfies the above SDE.</p>
+<p>The GBM is one of the most popular stochastic processes and undoubtedly an effective instrument in modelling and predicting the random changes in stock prices that evolve over time. It is essentially useful for index price study because the process in question assumes that percentage changes are independent and identically distributed over equal and non-overlapping time length (Luenberger <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0026_159">1995</a>; Ross <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0037_159">2000</a>). The GBM model assumes that the instantaneously expected rate of return is constant. Hence, the constant instantaneous expected drift assumption of the standard Brownian process is substituted with the constant expected rate of return in the geometric Brownian process (Hull 2000). The GBM model usually assumes that the distribution of asset returns is either normal or lognormal. However, financial data often have heavier tails than can be captured by the standard GBM model. As such, there is a need to use non-normal distributions to better model and deal with the heavy tails (Carol <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0005_159">2004</a>; Tan <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0044_159">2005</a>; Tan &amp; Chu <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0045_159">2012</a>; Tan &amp; Tokinaga <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0046_159">2006</a>, <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0047_159">2007</a>). However, intractable likelihood functions for SDEs make inference challenging, necessitating the requirement of simulation-based techniques to estimate and maximise the likelihood function. The sequential Monte Carlo (SMC) methods or the particle filter have allowed for the accurate evaluation of likelihoods at fixed parameter values (Nemeth, Feamhead &amp; Mihaylova <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0032_159">2014</a>).</p>
+<p>In this article, we extended our investigations by introducing a GBM model based on the <i>t</i>-distribution–based particle filter to approximate the return distributions of assets and compared the distribution with normal distribution. In evaluating the proposed GBM level of precision, the model parameters are estimated. An SMC or particle filter technique based on student’s <i>t</i>-distribution is developed to estimate the parameters for the extended model. The ensuing models are applied to modelling the closing stock price of five firms of the Nigerian Stock Exchange (NSE).</p>
+<h4 class="sec1">
+<a name="4"></a><b>Review of relevant literature</b>
+</h4>
+<p>A number of studies have been conducted in the area of GBM as a model for stock prices. Some scholars have tried extending, and hence improving, the standard GBM model. Duplantier (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0006_159">2005</a>) referred to Louis Bachelier, who in his PhD thesis in 1900 mentioned that the stock price dynamics follow a Brownian motion. The process he applied can produce shares that could allow both negative security prices and option prices that exceed the price of the underlying asset. Osborne (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0033_159">1959</a>) refined the Bachelier model by employing the stochastic exponential of the Brownian motion to model stock price. Samuelson (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0040_159">1965</a>) extended the GBM by using the discount rate in pricing. For him, the return rates, instead of the stock prices, follow the GBM (Piasecki <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0034_159">2006</a>). Some scholars represented rare events by jumps and introduced a model of jump diffusion (see Kou <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0022_159">2002</a>; Merton <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0029_159">1976</a>). Others presented a more realistic stochastic process for the underlying process (e.g. stock price) by bringing in a stochastic process for the volatility, that is, with the variance of the stock return as random (e.g. Heston <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0013_159">1993</a>; Hull &amp; White <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0015_159">1987</a>; Stein &amp; Stein <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0043_159">1991</a>).</p>
+<p>Thao (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0048_159">2006</a>) tried to replace the Brownian motions with fractional Brownian motions in the diffusion model. Sattayatham, Intrasit and Chaiyasena (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0041_159">2007</a>) improved on Thao’s results by adding a Poisson jump into the model.</p>
+<p>Geometric Brownian motion has been extensively used as a model for stock prices, commodity prices, growth in demand for products and services, and real options analysis (Benninga &amp; Tolkowsky <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0002_159">2002</a>; Nembhard, Shi &amp; Aktan <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0031_159">2002</a>; Thorsen <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0051_159">1998</a>). It has also been used for representing future demand in capacity studies (Lieberman <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0025_159">1989</a>; Ryan <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0039_159">2006</a>; Whitt <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0053_159">1981</a>). On the whole, its acceptance was motivated from the assumption that random changes over time follow a GBM process (Marathe &amp; Ryan <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0028_159">2005</a>). On the other hand, some scholars have raised relevant questions concerning the accuracy of the GBM (e.g. Marathe &amp; Ryan <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0028_159">2005</a>; Ross <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0036_159">1999</a>; Thorsen <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0051_159">1998</a>; Watteel-Sprague <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0052_159">2000</a>).</p>
+<p>Works on modelling return distributions of financial assets also exist. The most used are the normal, the lognormal and the non-Gaussian stable distributions. Other types of distributions, such as the student’s <i>t</i>, the skewed student’s <i>t</i>, the generalised <i>t</i>, the generalised error distribution (GED), the skewed GED and mixture distribution of Gaussian distributions, have also been applied. The normal distribution is one of the most usually applied distributions. It was extensively used in the 1700s; in 1800, Karl Gauss successfully applied it to astronomical data analysis. It became known as the Gaussian distribution. Empirical analyses from the late 1960s were not successful in supporting the normal assumption on estimating the return distribution of real financial data. Mandelbrot (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0027_159">1963</a>) affirmed that although financial prices or its logarithm following a Brownian motion is mathematically convenient, it is difficult to fit the real financial data with this assumption. Fama (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0007_159">1965</a>) analysed equilibrium asset pricing and noted that the daily return distribution follows a non-Gaussian distribution. Both Mandelbrot and Fama pointed out that excess kurtosis and heavy tails exist in real financial data.</p>
+<p>Hsu, Miller and Wichern (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0014_159">1974</a>) and Hagerman (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0011_159">1978</a>) showed from their studies that return distributions are non-normal. Bollerslev (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0003_159">1987</a>) found leptokurtosis in monthly Standard &amp; Poor’s 500 Index returns. Kariya et al. (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0017_159">1995</a>) and Nagahara (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0030_159">1996</a>) revealed that the return distributions of Japanese stocks are fat-tailed and skewed. Kitagawa, Sato and Nagahara (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0021_159">1999</a>) found that daily or weekly return distributions are not normal but fat-tailed and skewed according to observed financial data. Harvey and Siddique (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0012_159">2000</a>) and Premaratne and Bera (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0035_159">2000</a>) confirmed that the asymmetry of return distribution exists in real business data. Gerig, Vicente and Fuentes (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0008_159">2009</a>) presented a model that explained the shape and scaling of the distribution of intraday stock price fluctuations and verified the model by using a large database made up of several stocks traded on the London Stock Exchange. Their findings showed that the return distributions for these stocks are non-Gaussian, similar in shape and appear to be stable over intraday time scales.</p>
+<p>Theodossiou (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0049_159">1998</a>) advocated the use of a skewed generalised <i>t</i>-distribution, which combines the student’s <i>t</i> and skewed student’s <i>t</i>, to model return distributions. Furthermore, Theodossiou (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0050_159">2000</a>) pointed out that a skewed GED fits the financial data well, while asymmetry and excess kurtosis are observed in the financial data.</p>
+<h4 class="sec1">
+<a name="5"></a><b>Methodology</b>
+</h4>
+<h5><b>Geometric Brownian motion model</b></h5>
+<p>Geometric Brownian motion is the stochastic process used in the Black–Scholes methodology to model the evolution of prices in time. As in a typical structural model, let us consider a firm with its value of the asset <i>V</i><sub><i>t</i></sub> following a GBM:</p>
+<p><a id="JEF-12-159-E2">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2539-1-PB.jpg"></p>
+<p>where <i>μ</i> and <i>σ</i> are drift and volatility parameters to be estimated. The drift informs us on the average rate at which a value increases in a stochastic process, while the volatility is the constant characteristic of the stock prices that tells us the measure of the fluctuations of the stock prices. Relatively high volatility means that the stock price varies continuously within relatively large intervals. The notation <i>dt</i> is an infinitely approaching 0 time difference between time points <i>t</i> and <i>t</i> - 1 and the last term involves random <i>dB</i><sub><i>t</i></sub> ~ <i>N</i>(0, <i>dt</i>) increment to Brownian motion process. The right-hand side term <i>μ</i><i>V</i><sub><i>t</i></sub><i>d</i><sub><i>t</i></sub> controls the ‘trend’ of this trajectory and the term <i>σ</i><i>V</i><sub><i>t</i></sub><i>dB</i><sub><i>t</i></sub> controls the random noise in the trajectory. Nevertheless, one of the foremost challenges in applying this model to financial market data is the fact that the underlying asset value process is unobservable.</p>
+<p>Applying the Ito’s formula (see Lamberton &amp; Lapeyre <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0023_159">1997</a>) on equation (2) with <i>F</i>(<i>S</i>) = ln<i>S</i>, we obtain the following equation:</p>
+<p><a id="JEF-12-159-E3">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2541-1-PB.jpg"></p>
+<p>The stochastic process, as characterised by equation (3), indicates that ln<i>S</i> is normally distributed. Equivalently, <i>S</i> is lognormally distributed.</p>
+<p>Taking the exponential of both sides and inserting the initial condition <i>S</i><sub>0</sub>, we obtain the solution. The analytical solution of this GBM is given by:</p>
+<p><a id="JEF-12-159-E4">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2540-1-PB.jpg"></p>
+<p>This SDE is principally significant in the modelling of many asset classes. Equation (4) is the asset price model that can predict an asset price at specific time <i>t</i>. We can represent GBM solution as follows:</p>
+<p><a id="JEF-12-159-E5">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2542-1-PB.jpg"></p>
+<p>where <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2506-1-PB.jpg">.</p>
+<h5><b>Geometric Brownian motion model maximum likelihood estimation</b></h5>
+<p>The parameters <i>μ</i> and <i>σ</i> can be estimated using historical data for stock price, bearing in mind that the time difference for data with monthly frequency is <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2517-1-PB.jpg">.</p>
+<p>As Brigo et al. (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0004_159">2007</a>) noted, the parameters that need to be optimised are <i>θ</i> = (<i>μ, σ</i>) for the GBM.</p>
+<p>The likelihood function is denoted as:</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2496-1-PB.jpg" alt="JEF-12-159-UE1.jpg"></p>
+<p align="justify"></p>
+<p>where <i>f<sub>θ</sub></i> is the probability density function, and <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2529-1-PB.jpg"> are the log returns.</p>
+<p>Let <i>θ</i> = (<i>µ, σ</i>), then the probability density function <i>f<sub>θ</sub></i> is:</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2498-1-PB.jpg" alt="JEF-12-159-UE2.jpg"></p>
+<p align="justify"></p>
+<p>The likelihood function is maximised to get the optimal estimators <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2531-1-PB.jpg">.</p>
+<p>As stated earlier, the Wiener process <i>dB</i><sub><i>t</i></sub> is assumed to follow a normal distribution with mean 0 and variance <i>dt</i>. From the corresponding continuous density function of the Wiener process, the natural logarithm of the likelihood function is obtained:</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2499-1-PB.jpg" alt="JEF-12-159-UE3.jpg"></p>
+<p align="justify"></p>
+<p>let <i>dt</i> = 1</p>
+<p>The expression <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2532-1-PB.jpg"> is unrelated to the parameters under study within the <i>L</i>(<i>θ</i>). Thus, the <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2534-1-PB.jpg"> expression does not hold any importance for the parameters estimation and is removed from the log-likelihood function; thus, its transformed version gives:</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2500-1-PB.jpg" alt="JEF-12-159-UE4.jpg"></p>
+<p align="justify"></p>
+<p>From the above, the specific log-likelihood function of the GBM is found by replacing the equivalent Weiner process such that:</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2501-1-PB.jpg" alt="JEF-12-159-UE5.jpg"></p>
+<p align="justify"></p>
+<p>The natural logarithm of the likelihood function is differentiated in terms of <i>μ</i> and <i>σ</i> and then equated to zero to give equations:</p>
+<p><a id="JEF-12-159-E6">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2543-1-PB.jpg"></p>
+<p><a id="JEF-12-159-E7">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2544-1-PB.jpg"></p>
+<p>where</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2502-1-PB.jpg" alt="JEF-12-159-UE6.jpg"></p>
+<p align="justify"></p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2503-1-PB.jpg" alt="JEF-12-159-UE7.jpg"></p>
+<p align="justify"></p>
+<p>Determining <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2535-1-PB.jpg"> and <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2536-1-PB.jpg">, the corresponding maximum likelihood estimator (MLE) of <i>μ</i> and <i>σ</i> are <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2537-1-PB.jpg"> and <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2507-1-PB.jpg"></p>
+<h5><b>Geometric Brownian motion with t-distribution</b></h5>
+<p>Asset return distributions are frequently presumed to follow either a normal or a lognormal distribution. It can also follow GBM based on the Gaussian process. However, many empirical studies have shown that return distributions are usually not normal. They often find evidence of non-normality, such as heavy tails, excess kurtosis and finite moments. One class of fat-tailed distributions with the potential to give a better approximation to the distribution of stock returns is the <i>t</i>-distribution.</p>
+<p>An extension of the version of the GBM model, wherein it is assumed that the random noise process, <i>dB</i><sub><i>t</i></sub>, is a student’s <i>t</i>-distribution, is considered. The proposed student’s <i>t</i>-distribution with degrees of freedom, <i>v</i>, for the last term, <i>dB</i><sub><i>t</i></sub>, effects a change in the equation:</p>
+<p><a id="JEF-12-159-E8">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2545-1-PB.jpg"></p>
+<p>The distribution of the error term for this specification according to Shimada and Tsukuda (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0042_159">2005</a>) assumes the following form:</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2504-1-PB.jpg" alt="JEF-12-159-UE8.jpg"></p>
+<p align="justify"></p>
+<h5><b>Sequential Monte Carlo algorithm analysis</b></h5>
+<p>The SMC, also known as particle filter algorithm (Gordon, Salmond &amp; Smith <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0010_159">1993</a>), in sequential estimation on hidden asset value and model parameters estimation, is applied under the GBM model. This method applies the concept of sampling-importance-resampling (SIR) (Rubin <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0038_159">1987</a>). One of the key challenges in applying structural models to financial market data is the fact that the underlying asset value process is unobservable. Furthermore, at each time <i>t</i>, market values of stock are known only up to the time <i>t</i>, which means that the information needs to be updated sequentially. In this section, with known model parameters, we apply the particle filter algorithm to update the information about the underlying asset value process recursively from the observed times series. By running the filtering algorithm, the conditional distribution of the underlying asset value is approximated and recursively updated, given observed prices.</p>
+<p>Assuming that we have at time <i>t</i> weighted particles <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2508-1-PB.jpg"> drawn from <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2509-1-PB.jpg"> is a set of particle filters with associated weight <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2510-1-PB.jpg">. This is seen as an empirical approximation for the density made up of point masses:</p>
+<p><a id="JEF-12-159-E9">
+</a><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2546-1-PB.jpg"></p>
+<p>Kitagawa and Sato (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0020_159">2001</a>) and Kitagawa (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0019_159">1996</a>) offer an algorithm for filtering as follows:</p>
+<ol>
+<li><p>For <i>i</i> = 1, …, <i>N</i>, generate a random number <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2511-1-PB.jpg"></p></li>
+<li><p>Repeat the following steps for <i>t</i> = 1, …, <i>T</i>.
+</p><ol type="a">
+<li><p>For <i>i</i> = 1, …, <i>N</i>, generate a random number <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2512-1-PB.jpg"></p></li>
+<li><p>For <i>i</i> = 1, …, <i>N</i>, compute <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2513-1-PB.jpg"></p></li>
+<li><p>For <i>i</i> = 1, …, <i>N</i>, compute <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2514-1-PB.jpg"></p></li>
+<li><p>Generate <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2515-1-PB.jpg"> by resampling <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2516-1-PB.jpg"></p></li>
+</ol><p></p></li>
+<li><p>This Monte Carlo filter returns</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2505-1-PB.jpg" alt="JEF-12-159-UE9.jpg"></p>
+<p align="justify"></p></li>
+</ol>
+<h5><b>Estimation procedure</b></h5>
+<p>In this section, with known model parameters, we apply the particle filter algorithm based on t-distribution to update the information about the underlying asset value process recursively from the observed times series of stock prices.</p>
+<p>With known parameters Θ = {<i>μ, σ</i>}, we observe the time series of stock prices <i>S</i> = {<i>S</i><sub><i>t</i></sub>; <i>t</i> = 1, … <i>T</i>} and have the hidden asset process to be estimated <i>V</i> = {<i>V</i><sub><i>t</i></sub>; <i>t</i> = 1, … <i>T</i>}. The algorithm is as follows:</p>
+<p>The algorithm for the filtering is an extension of Godsill, Doucet and West’s (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0009_159">2004</a>) and Kim and Stoffer’s (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0018_159">2008</a>) algorithms. From here <i>M</i> samples from <i>f</i>(<i>V</i><sub><i>t</i></sub>,| <i>S</i><sub><i>t</i></sub>) for each <i>t</i> were obtained.</p>
+<ol>
+<li><p>Given <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2518-1-PB.jpg">, draw <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2519-1-PB.jpg"> from <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2520-1-PB.jpg"> for <i>i</i> = 1,…, <i>M</i></p>
+<p>Generate <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2521-1-PB.jpg"></p></li>
+<li><p>Generate a random number <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2522-1-PB.jpg">,</p></li>
+<li><p>Compute <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2523-1-PB.jpg">
+</p><ol type="a">
+<li><p>Compute <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2524-1-PB.jpg"></p></li>
+<li><p>Generate <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2526-1-PB.jpg"> by resampling with weights, <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2527-1-PB.jpg"></p></li>
+</ol><p></p>
+<p>Resample from <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2528-1-PB.jpg"> with probability proportional to <img style="vertical-align: middle;" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2530-1-PB.jpg">.</p></li>
+</ol>
+<h5><b>Evaluation methods of geometric Brownian motion</b></h5>
+<p>As averred by Lawrence, Klimberg and Lawrence (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0024_159">2009</a>), we have three measurements of forecasting model which involve time period <i>t</i>. The measurements are number of period forecasts, <i>n</i>; actual value in time period at time <i>t, Y</i><sub><i>t</i></sub>; and forecast value at time period <i>t, F</i><sub><i>t</i></sub>. The mean absolute percentage error (MAPE) seems to be the most widely used to evaluate the forecasting method that considers the effect of the magnitude of the actual values. It is a measure of prediction accuracy of a forecasting method in statistics. It usually expresses accuracy as a percentage and is defined as follows:</p>
+<p></p>
+<p align="center"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2497-1-PB.jpg" alt="JEF-12-159-UE10.jpg"></p>
+<p align="justify"></p>
+<p>The difference between <i>Y</i><sub><i>t</i></sub> and <i>F</i><sub><i>t</i></sub> is divided by the actual value <i>Y</i><sub><i>t</i></sub> again. The absolute value in this calculation is summed for every forecasted point in time and divided by the number of fitted points <i>n</i>. Multiplying by 100 makes it a percentage error.</p>
+<h4 class="sec1">
+<a name="6"></a><b>Empirical results and discussion</b>
+</h4>
+<h5><b>Data</b></h5>
+<p>We apply the above-described methodology to model the stock prices of five firms of the NSE – each from five different sectors, namely the banking sector (Guaranteed Trust Bank [GTB]), oil and gas sector (Oando), construction sector (Julius Berger [Jberger]), health care sector (GlaxoSmith) and industrial goods sector (Chemical &amp; Allied Product [CAP]) over the period 02 January 2010 to 31 December 2014.</p>
+<p>The data series is transformed into daily log returns series so that we can obtain stationary series. Descriptive statistical summary is obtained to view the data for the daily stock prices and returns of all the indices.</p>
+<p><a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0001_159">Table 1</a> reports the descriptive statistics for all the five selected indices. The value of the kurtosis for returns is high and greater than 3. This shows that the distribution is leptokurtic, that is, it is fat-tailed and that the returns display financial characteristics of volatility clustering and leptokurtosis. The skewness for both prices and returns is positive, showing that the distribution has a long right tail. The high values of kurtosis for the returns indicate that extreme price changes occurred frequently during the sampling period. The positive skewness and kurtosis indicated non-normal series. With reference to Jarque-Bera statistics, the stock index series is non-normal at 99% confidence interval as the probability is 0 × 10<sup>-6</sup>, which is less than 0.01.</p>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="T0001_159"></a><a href="https://jefjournal.org.za/index.php/jef/article/viewFile/159/573/2482" target="_blank"><b>TABLE 1:</b></a>&nbsp;Descriptive statistical summary for the daily stock prices.</td>
+</tr>
+</tbody>
+</table>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+
+
+<p><a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#F0001_159">Figures 1</a>–<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#F0005_159">5</a> show the plot of each of the five firms’ stock prices.</p>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0001_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2483-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2483-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2483-1-PB.jpg" target="_blank"><b>FIGURE 1:</b></a> Guaranteed Trust Bank (GTB) (a) stock pricing over time, (b) returns over time.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0002_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2484-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2484-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2484-1-PB.jpg" target="_blank"><b>FIGURE 2:</b></a> Oando (a) stock pricing over time, (b) returns over time.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0003_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2485-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2485-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2485-1-PB.jpg" target="_blank"><b>FIGURE 3:</b></a> JBerger (a) stock pricing over time, (b) returns over time.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0004_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2486-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2486-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2486-1-PB.jpg" target="_blank"><b>FIGURE 4:</b></a> GlaxoSmith (a) stock pricing over time, (b) returns over time.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0005_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2487-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2487-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2487-1-PB.jpg" target="_blank"><b>FIGURE 5:</b></a> Chemical and Allied Product (CAP) (a) stock pricing over time, (b) returns over time.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><p>The stock prices of each of the five firms of the NSE for the year 2010–2014 were used to derive the drift and volatility. <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0002_159">Table 2</a> shows the observed values.</p>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="T0002_159"></a><a href="https://jefjournal.org.za/index.php/jef/article/viewFile/159/573/2488" target="_blank"><b>TABLE 2:</b></a>&nbsp;Drift and volatility values of stock prices.</td>
+</tr>
+</tbody>
+</table>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+
+
+<p>These two parameters (drift and volatility) were then used to create the geometric Brownian path for both the GBM normal and student’s <i>t</i>-distribution of each of the five firms of the NSE. We compute the MLEs and the corresponding log-likelihood for each stock. <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0003_159">Table 3</a> summarises the estimated parameters for both the GBM normal and student’s <i>t</i>-distribution.</p>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="T0003_159"></a><a href="https://jefjournal.org.za/index.php/jef/article/viewFile/159/573/2489" target="_blank"><b>TABLE 3:</b></a>&nbsp;Estimated parameters of the geometric Brownian motion normal and student’s <i>t</i>-distribution.</td>
+</tr>
+</tbody>
+</table>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+
+
+<p>The log-likelihood for the GBM student’s <i>t</i>-distribution model is higher than that of the model for the GBM normal for each of the five stock series. Comparing the two models based on the Akaike information criterion (AIC), it is found that the GBM <i>t</i>-distribution model outperforms the GBM normal model for each of the five stocks.</p>
+<p>The GBM normal and student’s <i>t</i>–based particle filter method are then run on the simulated prices process, and the average MAPE is calculated. Both models estimate the volatility process of each of the five firms’ stock prices using known parameters. <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0004_159">Table 4</a> presents the observed values.</p>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="T0004_159"></a><a href="https://jefjournal.org.za/index.php/jef/article/viewFile/159/573/2490" target="_blank"><b>TABLE 4:</b></a>&nbsp;Evaluation statistic-distribution comparison of techniques based on the normal and student’s <i>t</i>.</td>
+</tr>
+</tbody>
+</table>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+
+
+<p>Graphically, for a single run, the estimation results obtained from running these two models are shown in <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#F0006_159">Figures 6</a>–<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#F0010_159">10</a>. Each figure shows a GBM’s normal paths (blue line), student’s <i>t</i> paths (red line) and the actual volatility price curve (black line) of each of the five firms’ stock prices.</p>
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0006_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2491-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2491-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2491-1-PB.jpg" target="_blank"><b>FIGURE 6:</b></a> Brownian path for Guaranteed Trust Bank (GTB).</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0007_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2492-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2492-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2492-1-PB.jpg" target="_blank"><b>FIGURE 7:</b></a> Brownian path for Oando.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0008_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2493-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2493-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2493-1-PB.jpg" target="_blank"><b>FIGURE 8:</b></a> Brownian path for JBerger.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0009_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2494-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2494-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2494-1-PB.jpg" target="_blank"><b>FIGURE 9:</b></a> Brownian path for GlaxoSmith.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="#f7f7f9"><a id="F0010_159"></a>
+<table>  <tbody><tr><td bgcolor="#f7f7f9"><a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2495-1-PB.jpg" target="_blank">
+<img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2495-1-PB.jpg" _blank="" target="_blank" alt="" width="100" height="87"></a></td><td bgcolor="#f7f7f9">
+<a href="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/159-2495-1-PB.jpg" target="_blank"><b>FIGURE 10:</b></a> Brownian path for Chemical &amp; Allied Product.</td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border-top: 1px dashed; color=" #9d2f3a"=""></div>
+<br><p><a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#F0006_159">Figures 6</a>–<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#F0010_159">10</a> show the plots of volatility estimation for each of the five firms’ stock prices. The plots show that the GBM student’s <i>t</i>–based particle filter estimate (red line) and the actual volatility (black line) lie close to each other compared to the GBM normal estimate (blue line).</p>
+<h5><b>Discussion</b></h5>
+<p>Geometric Brownian motion model usually assumes that the distribution of asset returns is either normal or lognormal. Previous approaches to the estimation of GBM model have revealed that return distributions are usually not normal. In this article, a GBM model based on the <i>t</i>-distribution–based particle filter to approximate the return distributions of assets is introduced, and a comparison of the distribution and normal distribution is done.</p>
+<p>The descriptive statistics for the five indices of the NSE are given in <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0001_159">Table 1</a>. The highest average returns are obtained in GlaxoSmith. The other indices, which show higher mean returns, are JBerger and GTB. This reflects the performance of these indices. Furthermore, JBerger has the highest standard deviation (0.045), which represents higher volatility, while the lowest standard deviation belongs to GTB (0.027). The returns of the five selected indices are negatively skewed, indicating that the returns are flatter to the left compared to the normal distribution. The significant kurtosis indicates that return distribution has sharp peaks compared to a normal distribution. The Jarque-Bera (<a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#CIT0016_159">1980</a>) statistics confirmed that index returns are non-normally distributed.</p>
+<p>In evaluating the proposed GBM level of precision, the model parameters are estimated. A particle filter technique based on student’s <i>t</i>-distribution is developed to estimate the parameters for the GBM model. Our goal was to considerably improve the forecasting performance of a GBM model using student’s <i>t</i> particle filter, which is heavier tailed than the normal distribution. The stock prices of each of the five firms were used to derive the drift and volatility parameters (see <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0002_159">Table 2</a>). These two parameters were then used to create the geometric Brownian path for both the GBM normal and student’s <i>t</i>-distribution of each of the five firms of the NSE. <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0003_159">Table 3</a> presents the estimation results along with their log-likelihood and the AIC for the student’s <i>t</i> and the normal GBM models. The AIC and the log-likelihood values highlight the fact that the GBM student’s <i>t</i>-distribution better estimates the series than the GBM normal distribution. In fact, the log-likelihood of -2740, -2331, -2135, -1234 and -1345 for the GBM student’s <i>t</i>-distribution model increases, leading to AIC of 4248, 4568, 4176, 4234 and 4221 versus 4359, 4686, 4302, 4255 and 4684 for the normal GBM model. The evaluation statistics in terms of MAPE indicate that the GBM student’s <i>t</i>-distribution is highly accurate and the predictive exactness is higher, as proved by the MAPE value, which is lower than 10% (see <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#T0004_159">Table 4</a>).</p>
+<p>The plot of volatility estimation for each of the five firms’ stock prices is shown in <a href="https://jefjournal.org.za/index.php/jef/article/view/159/573#F0006_159">Figure 6</a>–10. The graphical presentation shows three scenarios for the GBM model – the representation of the trajectories of the actual volatility path (shown by black line), the GBM normal (shown by blue line) and the GBM student’s <i>t</i> estimate (shown by red dotted line) – and infers that the estimation of the GBM student’s <i>t</i> significantly outperforms the normal GBM model by accurately tracking the actual volatility path for each of the stock prices.</p>
+<h4 class="sec1">
+<a name="7"></a><b>Conclusion</b>
+</h4>
+<p>This work presented an extension of the random noise process, <i>dB</i><sub><i>t</i></sub>, in the GBM model from normal to student’s <i>t</i>-distribution. The goal was to compare and contrast the two models in five different stock market periods in terms of their predictability of such exceptional movements in the NSE market. The study revealed that the student’s <i>t</i> GBM performed better than the normal GBM in estimating both the volatility and the parameters of the model. A particle filter technique based on student’s <i>t</i>-distribution is developed to estimate the random effects and parameters for the extended model. The functions provided by MATLAB enabled us to develop the techniques based on the student’s <i>t</i> GBM model and a strategy for fitting the model. This change to the proposed model allows for a more robust fit, giving us a new tool to explore the tail fit. The student’s <i>t</i> GBM model was compared and evaluated with the normal GBM model. The experimental outcome of the simulation and real data analyses confirms the viability of the proposed method. The evaluation statistics are calculated to compare the fit of distributions. Student’s <i>t</i> GBM is more highly accurate than the normal GBM as proved by the MAPE value, which is lower than 10%. The results, based on daily stock prices, reveal that the student’s <i>t</i> GBM is comparable to the normal GBM model but empirically is more successful.</p>
+
+<h4 class="sec1">
+<a name="8"></a><b>Acknowledgements</b>
+</h4>
+
+<b><h5><b>Competing interests</b></h5></b>
+<p>The authors declare that they have no financial or personal relationships that may have inappropriately influenced them in writing this manuscript.</p>
+
+
+<b><h5><b>Authors’ contributions</b></h5></b>
+<p>B.E.N. was the project leader and was responsible for most of the theoretical and experimental work done. B.E.N. contributed by introducing an extension of the random noise process in the GBM model from normal to student"s <i>t</i>-distribution. B.E.N. also introduced techniques based on the student’s <i>t</i>-distribution and a strategy for the estimation of parameters of the GBM model by using the particle filtering algorithm, there by expanding the scope of application of the GBM model. O.A. made conceptual contributions and wrote and ran the codes for the simulation study.</p>
+
+
+
+<h4 class="sec1">
+<a name="9"></a><b>References</b>
+</h4>
+<div class="wordbr">
+<a id="CIT0001_159"></a><p>Bachelier, L., 1900, ‘Théorie de la speculation’, <i>Annales Scientifiques de L’École Normale Supérieure</i> 17, 21–86. (English translation by Boness A.J. in Cootner, P.H. (ed.), <i>The random character of stock market prices</i>, MIT Press, Cambridge, MA, 1964, pp. 17–75).</p>
+<a id="CIT0002_159"></a><p>Benninga, S. &amp; Tolkowsky, E., 2002, ‘Real options – An introduction and application to R&amp;D evaluation’, <i>The Engineering Economist</i> 47(2), 151–168. <a href="https://doi.org/10.1080/00137910208965030" target="_base">https://doi.org/10.1080/00137910208965030</a></p>
+<a id="CIT0003_159"></a><p>Bollerslev, T.P., 1987, ‘A conditional heteroscedastic time series model for security prices and rates of return data’, <i>Review of Economics and Statistics</i> 69, 542–547. <a href="https://doi.org/10.2307/1925546" target="_base">https://doi.org/10.2307/1925546</a></p>
+<a id="CIT0004_159"></a><p>Brigo, D., Dalessandro, A., Neugebauer, M. &amp; Triki, F., 2007, <i>A stochastic processes toolkit for risk management</i>, viewed 13 January 2017, from <a href="http://ssrn.com/abstract=110916" target="_base">http://ssrn.com/abstract=110916</a>; <a href="http://arxiv.org/pdf/0812.4210.pdf" target="_base">http://arxiv.org/pdf/0812.4210.pdf</a></p>
+<a id="CIT0005_159"></a><p>Carol, A., 2004, ‘Normal mixture diffusion with uncertain volatility: Modeling short-and long-term smile effects’, <i>Journal of Banking &amp; Finance</i> 28(12), 2957–2980. <a href="https://doi.org/10.1016/j.jbankfin.2003.10.017" target="_base">https://doi.org/10.1016/j.jbankfin.2003.10.017</a></p>
+<a id="CIT0006_159"></a><p>Duplantier, B., 2005, ‘Le mouvement brownien, “divers et ondoyant”’, <i>Seminaire Poincare</i> 1, 155–212.</p>
+<a id="CIT0007_159"></a><p>Fama, E., 1965, ‘The behaviour of stock market prices’, <i>Journal of Business</i> 38, 34–105. <a href="https://doi.org/10.1086/294743" target="_base">https://doi.org/10.1086/294743</a></p>
+<a id="CIT0008_159"></a><p>Gerig, A., Vicente, J. &amp; Fuentes, M., 2009, ‘Model for non-Gaussian intraday stock returns’, <i>Physical Review E</i> 80(6), 1–4. <a href="https://doi.org/10.1103/PhysRevE.80.065102" target="_base">https://doi.org/10.1103/PhysRevE.80.065102</a></p>
+<a id="CIT0009_159"></a><p>Godsill, S., Doucet, A. &amp; West, M., 2004, ‘Monte Carlo smoothing for non-linear time series’, <i>Journal of the American Statistical Association</i> 199, 156–168. <a href="https://doi.org/10.1198/016214504000000151" target="_base">https://doi.org/10.1198/016214504000000151</a></p>
+<a id="CIT0010_159"></a><p>Gordon, N., Salmond, D. &amp; Smith, A., 1993, ‘A novel approach to nonlinear/non-Gaussian Bayesian state estimation’, <i>IEE Proceedings on Radar and Signal Processing</i> 140(2), 107–113. <a href="https://doi.org/10.1049/ip-f-2.1993.0015" target="_base">https://doi.org/10.1049/ip-f-2.1993.0015</a></p>
+<a id="CIT0011_159"></a><p>Hagerman, R. L., 1978, ‘Notes: more evidence on the distribution of security returns’, <i>Journal of Finance</i> 33(4), 1213–1221.</p>
+<a id="CIT0012_159"></a><p>Harvey, C.R. &amp; Siddique, A., 2000, ‘Conditional skewness in asset pricing tests’, <i>Journal of Finance</i> 55, 1263–1295. <a href="https://doi.org/10.1111/0022-1082.00247" target="_base">https://doi.org/10.1111/0022-1082.00247</a></p>
+<a id="CIT0013_159"></a><p>Heston, S.L., 1993, ‘A closed-form solution for options with stochastic volatility with applications to bond and currency options’, <i>The Review of Financial Studies</i> 6(2), 327–343. <a href="https://doi.org/10.1093/rfs/6.2.327" target="_base">https://doi.org/10.1093/rfs/6.2.327</a></p>
+<a id="CIT0014_159"></a><p>Hsu, D.A., Miler, R.B. &amp; Wichern, D.W., 1974, ‘On the stable Paretian behavior of stock market prices’, <i>Journal of American Statistical Association</i> 69, 108–113. <a href="https://doi.org/10.1080/01621459.1974.10480135" target="_base">https://doi.org/10.1080/01621459.1974.10480135</a></p>
+<a id="CIT0015_159"></a><p>Hull, J.C. &amp; White, A., 1987, ‘The pricing of options on assets with stochastic volatilities’, <i>Journal of Finance</i> 42, 281–300. <a href="https://doi.org/10.1111/j.1540-6261.1987.tb02568.x" target="_base">https://doi.org/10.1111/j.1540-6261.1987.tb02568.x</a></p>
+<a id="CIT0016_159"></a><p>Jarque C.M, Bera A.K., 1980. ‘Efficient tests for normality, homoscedasticity and serial independence of regression residuals’, <i>Economics Letters</i> 6(3), 255–259.</p>
+<a id="CIT0017_159"></a><p>Kariya, T., Tsukuda, Y., Maru, J., Matsue, Y. &amp; Omaki, K., 1995, ‘An extensive analysis on the Japanese markets via S. Taylor’s model’, <i>Financial Engineering and the Japanese Markets</i> 2(1), 15–87. <a href="https://doi.org/10.1007/BF02425229" target="_base">https://doi.org/10.1007/BF02425229</a></p>
+<a id="CIT0018_159"></a><p>Kim, J. &amp; Stoffer, D.S., 2008, ‘Fitting stochastic volatility models in the presence of irregular sampling via particle methods and the EM algorithm’, <i>Journal of Time Series Analysis</i> 29(5), 811–833. <a href="https://doi.org/10.1111/j.1467-9892.2008.00584.x" target="_base">https://doi.org/10.1111/j.1467-9892.2008.00584.x</a></p>
+<a id="CIT0019_159"></a><p>Kitagawa, G., 1996, ‘Monte Carlo filter and smoother for non-Gaussian nonlinear state space models’, <i>Journal of Computational and Graphical. Statistics</i> 5, 1–25.</p>
+<a id="CIT0020_159"></a><p>Kitagawa, G. &amp; Sato, S., 2001, ‘Monte carlo smoothing and self-organising state space model’, in A. Doucet, N. de Freitas &amp; N. Gordon (eds.), <i>Sequential Monte Carlo methods in practice</i>, pp. 177–195, Springer-Verlag, New York.</p>
+<a id="CIT0021_159"></a><p>Kitagawa. G., Sato, S. &amp; Nagahara, Y., 1999, <i>Estimation of the stochastic volatility based upon Non-Gaussian state space model</i>, IMES Discussion Paper Series 98-J-12 (in Japanese). Tokyo, University of Tokyo Press.</p>
+<a id="CIT0022_159"></a><p>Kou, S.G., 2002, ‘A jump-diffusion model for option pricing’, <i>Management Science</i> 48, 1086–1101. <a href="https://doi.org/10.1287/mnsc.48.8.1086.166" target="_base">https://doi.org/10.1287/mnsc.48.8.1086.166</a></p>
+<a id="CIT0023_159"></a><p>Lamberton, D. &amp; Lapeyre, B., 1997, <i>Introduction to stochastic calculus applied to finance</i>, Chapman and Hall, London, Chapters 4 and 5.</p>
+<a id="CIT0024_159"></a><p>Lawrence, K.D., Klimberg, R.K. &amp; Lawrence, S.M., 2009, <i>Fundamentals of forecasting using Excel</i>, Industrial Press Inc., New York.</p>
+<a id="CIT0025_159"></a><p>Lieberman, B.M., 1989, ‘Capacity utilization: Theoretical models and empirical tests’, <i>European Journal of Operational Research</i> 40, 155–168. <a href="https://doi.org/10.1016/0377-2217(89)90327-5" target="_base">https://doi.org/10.1016/0377-2217(89)90327-5</a></p>
+<a id="CIT0026_159"></a><p>Luenberger, D., 1995, <i>Investment science</i>, Oxford University Press, New York.</p>
+<a id="CIT0027_159"></a><p>Mandelbrot, B.B., 1963, ‘New methods in statistical economics’, <i>Journal of Political Economy</i> 71, 421–440. <a href="https://doi.org/10.1086/258792" target="_base">https://doi.org/10.1086/258792</a></p>
+<a id="CIT0028_159"></a><p>Marathe, R.R. &amp; Ryan, S.M., 2005, ‘On the validity of the geometric Brownian motion assumption’, <i>The Engineering Economist</i> 50(2), 159–192. <a href="https://doi.org/10.1080/00137910590949904" target="_base">https://doi.org/10.1080/00137910590949904</a></p>
+<a id="CIT0029_159"></a><p>Merton, R.C., 1976, ‘Option pricing when underlying stock returns are discontinuous’, <i>Journal of Financial Economics</i> 3, 125–144. <a href="https://doi.org/10.1016/0304-405X(76)90022-2" target="_base">https://doi.org/10.1016/0304-405X(76)90022-2</a></p>
+<a id="CIT0030_159"></a><p>Nagahara, Y., 1996, ‘Non-gaussian distribution for stock returns and related stochastic differential equation’, <i>Financial Engineering and Japanese Markets</i> 3(2), 121–149. <a href="https://doi.org/10.1007/BF00868083" target="_base">https://doi.org/10.1007/BF00868083</a></p>
+<a id="CIT0031_159"></a><p>Nembhard, H.B., Shi, L. &amp; Aktan, M., 2002, ‘A real options design for quality control charts’, <i>The Engineering Economist</i> 47(1), 28–50. <a href="https://doi.org/10.1080/00137910208965022" target="_base">https://doi.org/10.1080/00137910208965022</a></p>
+<a id="CIT0032_159"></a><p>Nemeth, C., Feamhead, P. &amp; Mihaylova, L., 2014, ‘Sequential Monte Carlo methods for state and parameter estimation in abruptly changing environments’, <i>IEEE Transactions on Signal Processing</i> 62(5), 1245–1255. <a href="https://doi.org/10.1109/TSP.2013.2296278" target="_base">https://doi.org/10.1109/TSP.2013.2296278</a></p>
+<a id="CIT0033_159"></a><p>Osborne, M.F.M., 1959, ‘Brownian motion in the stock market’, <i>Operations Research</i> 7, 145–173. <a href="https://doi.org/10.1287/opre.7.2.145" target="_base">https://doi.org/10.1287/opre.7.2.145</a></p>
+<a id="CIT0034_159"></a><p>Piasecki, J., 2006, <i>Centenary of Marian Smoluchowski’s Theory of Brownian</i>. XIX Marian Smoluchowsk Symposium on Statistical Physics, Krakow, May 14–17, Vol 38.</p>
+<a id="CIT0035_159"></a><p>Premaratne, G. &amp; Bera, A.K., 2000, <i>Modelling asymmetry and excess kurtosis in stock return data</i>, University of Illinois, Urbana-Champaign, Urbana, USA (Working paper).</p>
+<a id="CIT0036_159"></a><p>Ross, S., 1999, <i>An introduction to mathematical finance</i>, Cambridge University Press, UK.</p>
+<a id="CIT0037_159"></a><p>Ross, S., 2000, <i>Introduction to probability models</i>, 7th edn., Harcourt Academic Press, New York.</p>
+<a id="CIT0038_159"></a><p>Rubin, D.B., 1987, ‘Comment on “The calculation of posterior distributions by data augmentation” by Tanner, M.A. &amp; Wong, W.H.’, <i>Journal of the American Statistical Association</i> 82, 543–546.</p>
+<a id="CIT0039_159"></a><p>Ryan, S.M., 2006, ‘Capacity expansion for random exponential demand growth with lead times’, <i>Management Science</i> 50(6), 740–748. <a href="https://doi.org/10.1287/mnsc.1030.0187" target="_base">https://doi.org/10.1287/mnsc.1030.0187</a></p>
+<a id="CIT0040_159"></a><p>Samuelson, P., 1965, ‘Rational theory of warrant pricing’, <i>Industrial Management Review</i> 6, 13–32.</p>
+<a id="CIT0041_159"></a><p>Sattayatham, P., Intrasit, A. &amp; Chaiyasena, P., 2007, ‘A fractional Black-Scholes model with jumps’, <i>Vietnam Journal of Mathematics</i> 35(3), 1–15.</p>
+<a id="CIT0042_159"></a><p>Shimada, J. &amp; Tsukuda, Y., 2005, ‘Estimation of stochastic volatility models: An approximation to the nonlinear state space representation’, <i>Communications in Statistics</i>-<i>Simulation and Computation</i> 34, 429–450. <a href="https://doi.org/10.1081/SAC-200055729" target="_base">https://doi.org/10.1081/SAC-200055729</a></p>
+<a id="CIT0043_159"></a><p>Stein, E., &amp; J Stein, J., 1991, ‘Stock price distributions with stochastic volatility’, <i>Review of Financial Studies</i> 4,727–752.</p>
+<a id="CIT0044_159"></a><p>Tan, K., 2005, ‘Modeling returns distribution based on radical normal distributions’, <i>Journal of the Society for Studies on Industrial Economies</i> 46(3), 449–467.</p>
+<a id="CIT0045_159"></a><p>Tan, K. &amp; Chu, M., 2012, ‘Estimation of portfolio return and value at risk using a class of Guassian mixture distributions’, <i>The International Journal of Business and Finance Research</i> 6(1), 97–107.</p>
+<a id="CIT0046_159"></a><p>Tan, K. &amp; Tokinaga, S., 2006, ‘Identifying returns distribution by using mixture distribution optimized by genetic algorithm’, in <i>Proceedings of 2006 International Symposium on Nonlinear Theory and its Applications</i>, Vancouver, Canada, September 16–19, pp. 119–122.</p>
+<a id="CIT0047_159"></a><p>Tan, K. &amp; Tokinaga, S., 2007, ‘An approximation of returns distribution based upon GA optimized mixture distribution and its applications’, in <i>Proceedings of the 4th International Conference on Computational Intelligence, Robotics and Autonomous Systems</i>, pp. 307–312.</p>
+<a id="CIT0048_159"></a><p>Thao, T.H., 2006, ‘An approximate approach to fractional analysis for finance’, <i>Nonlinear Analysis: Real World Applications</i> 7, 124–132. <a href="https://doi.org/10.1016/j.nonrwa.2004.08.012" target="_base">https://doi.org/10.1016/j.nonrwa.2004.08.012</a></p>
+<a id="CIT0049_159"></a><p>Theodossiou, P., 1998, ‘Financial data and the Skewed generalized T distribution’, <i>Management Science</i> 44(12), 1650–1661. <a href="https://doi.org/10.1287/mnsc.44.12.1650" target="_base">https://doi.org/10.1287/mnsc.44.12.1650</a></p>
+<a id="CIT0050_159"></a><p>Theodossiou, P., 2000, <i>Skewed generalized error distribution of financial assets and option pricing</i>, School of Business, Rutgers University, New Jersey, Newark. USA. (Working paper)</p>
+<a id="CIT0051_159"></a><p>Thorsen, B.J., 1998, ‘Afforestation as a real option: Some policy implications’, <i>Forest Science</i> 45(2), 171–178.</p>
+<a id="CIT0052_159"></a><p>Watteel-Sprague, R., 2000, <i>Investigations in financial time series: Model selection, option pricing, and density estimation</i>, The University of Western Ontario, London.</p>
+<a id="CIT0053_159"></a><p>Whitt, W., 1981, ‘The stationary distribution of a stochastic clearing process’, <i>Operations Research</i> 29(2), 294–308. <a href="https://doi.org/10.1287/opre.29.2.294" target="_base">https://doi.org/10.1287/opre.29.2.294</a></p>
+
+
+</div></td></tr></tbody></table>
+</td></tr></tbody></table>
+
+
+	
+
+
+ 
+
+	<br>
+<p>&nbsp;</p><div id="articleTitle"><h4 style="font-weight:normal;font-size: 11px !important;">Crossref Citations</h4></div><p>1. <b>Price Index Modeling and Risk Prediction of Sharia Stocks in Indonesia</b><br><span style="font-size: 0.9em;">Hersugondo Hersugondo, Imam Ghozali, Eka Handriani, Trimono Trimono, Imang Dapit Pamungkas</span><br><b><i>Economies</i></b>&nbsp;&nbsp;vol:&nbsp;10&nbsp;&nbsp;issue:&nbsp;1&nbsp;&nbsp;first page:&nbsp;17&nbsp;&nbsp;year:&nbsp;2022&nbsp;&nbsp;<br>doi: <a href="http://dx.doi.org/10.3390/economies10010017" target="_blank">10.3390/economies10010017</a></p><p>
+
+</p></div><!-- content -->
+<div id="pageFooter"><script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/c99f3c31edbbe4df1fa3a2ee4debc028.js.descarga"></script><div id="newpagefooter"><div id="footerleft"><!--<img src="/sajp/public/site/images/admin/logo.png" alt="" />--><span id="contactus"><strong>African Online Scientific Information Systems (Pty) Ltd t/a AOSIS</strong><br>Reg No: 2002/002017/07<br>International Tel: +27 21 975 2602<br>15 Oxford Street, Durbanville, Cape Town, 7550, South Africa<br>publishing(AT)aosis.co.za replace (AT) with @ <br></span><span id="contactustnc"><br>All articles published in this journal are licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a> (CC BY 4.0) license, unless otherwise stated. <br>Website design &amp; content: ©2023 <a href="https://www.aosis.co.za/" target="_blank"> AOSIS (Pty) Ltd.</a> All rights reserved. No unauthorised duplication allowed. <br>By continuing to use this website, you agree to our <a href="https://aosis.co.za/legal-centre/privacy-policy" target="_blank">Privacy Policy</a>, <a href="https://aosis.co.za/legal-centre/terms-of-use" target="_blank">Terms of Use</a> and <a href="https://aosis.co.za/legal-centre/security-policy" target="_blank">Security Policy</a>.</span><div id="connect"><a id="youtube" href="https://www.youtube.com/channel/UCeerVynFYugkpuIw7RtRQTg" target="_blank">__</a><a id="linkedin" href="https://www.linkedin.com/company/aosis/" target="_blank">__</a><a id="twitter" href="https://twitter.com/_AOSIS" target="_blank">__</a><a id="fb" href="https://www.facebook.com/aosis.za" target="_blank">__</a><a id="soundcloud" href="https://soundcloud.com/aosis-za/albums" target="_blank">__</a><a id="vimeo" href="https://vimeo.com/aosis" target="_blank">__</a></div></div><div id="footerright"><h1>Subscribe to our newsletter</h1><p>Get specific, domain-collection newsletters detailing the latest CPD courses, scholarly research and call-for-papers in your field.</p><a class="button" href="https://aosis.co.za/subscribe.html" target="_blank"> Subscribe </a></div><div id="footerBottom" style="width: 100%; height: 25px; float: left; background: whitesmoke; font-size: 9px;"><p style="font-size: 9px !important; font-weight: bold; padding: 0px 0 5px 10px; margin: 0.5em 0;">Journal of Economic and Financial Sciences &nbsp; &nbsp;| &nbsp; &nbsp;ISSN: 1995-7076 (PRINT) &nbsp; &nbsp;| &nbsp; &nbsp;ISSN: 2312-2803 (ONLINE)</p></div></div></div>
+<!-- Google tag (gtag.js) -->
+<script async="" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/js(1)"></script>
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-32221101-23');
+</script>
+<!-- /Google Analytics -->
+<!--<div id="standardFooter"><p>ISSN: 2312-2803</p></div>-->
+<script type="text/javascript" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/menu.js.descarga"></script>
+</div>
+</div><!-- main -->
+</div><!-- body -->
+<!-- container --><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Texto original</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Califica esta traducción</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Tus comentarios nos ayudarán a mejorar Google Traductor</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Buena traducción" aria-label="Buena traducción" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mala traducción" aria-label="Mala traducción" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./Estimation of geometric Brownian motion model with a t-distribution–based particle filter _ Nkemnole _ Journal of Economic and Financial Sciences_files/saved_resource.html"></iframe></div></div></div>
+
+
+
+
+
+
+
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div>
+    <style data-type="cookiescriptstyles">
+      #cookiescript_injected {
+    background-color: #2d2d2d;
+    z-index: 999997;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Open Sans', Arial, 'Trebuchet MS', 'Segoe UI', 'Helvetica', sans-serif;
+    box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.35);
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+.cookiescript_checkbox_label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding:0 4px;
+    line-height: 1.5;
+    margin:0;
+}
+#cookiescript_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 29px;
+    line-height: 13px;
+    cursor: pointer;
+    color: #FFFFFF;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: 0;
+    font-family: 'Trebuchet MS', 'Arial', sans-serif;
+    font-weight: 100;
+    opacity: 0.85;
+    z-index: 999999;
+}
+
+#cookiescript_buttons {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+}
+#cookiescript_manage_wrap {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+}
+#cookiescript_manage {
+    display: inline;
+    cursor: pointer;
+    color: #FFFFFF;
+    opacity:0.85;
+}
+#cookiescript_manage #cookiescript_manageicon .cookiescript_gear {
+    fill: #FFFFFF;
+}
+#cookiescript_manage:hover #cookiescript_manageicon .cookiescript_gear {
+    fill: #6BBE6B ;;
+}
+
+svg#cookiescript_manageicon {
+    width: 15px;
+    height: 15px;
+    display: inline;
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    vertical-align: baseline;
+}
+#cookiescript_header {
+    background-color: transparent;
+    z-index: 999998;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    opacity:1;
+}
+.cookiescript_checkbox {
+    display: flex;
+    flex-direction: row;
+}
+input.cookiescript_checkbox_input {
+}
+span.cookiescript_checkbox_text {
+    display: inline-block;
+    font-size: 11px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+#cookiescript_accept,
+#cookiescript_save {
+    border: 0;
+    transition: all 0.25s ease 0s;
+    background-color: #6BBE6B ;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+    line-height: 3.3;
+    letter-spacing: 0.4px;
+}
+/*IE 9 fixes*/
+@media screen and (min-width:0\0) and (min-resolution: .001dpcm) {
+    .cookiescript_checkbox_label {
+        position: relative;
+        top:-10px;
+    }
+    #cookiescript_accept, #cookiescript_reject, #cookiescript_save{
+    	display: inline-block;
+    }
+    #cookiescript_buttons{
+    	text-align:center;
+    }
+}
+#cookiescript_save{
+}
+#cookiescript_reject {
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    line-height: 3;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    background: #2d2d2d;
+}
+
+
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save {
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    min-width: 103px;
+}
+.cookiescript_bigger {
+    transform: scale(1.1);
+}
+#cookiescript_link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 9px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+#cookiescript_readmore,
+#cookiescript_reportlink,
+#cookiescript_cookiescriptlink {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+    transition: all 100ms ease 0s;
+    background-color: transparent;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 11px;
+}
+
+#cookiescript_description {
+    color: #FFFFFF;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+    font-weight: 400;
+    opacity: 0.85;
+}
+#cookiescript_checkboxs {
+}
+#cookiescript_close:hover,
+#cookiescript_manage:hover,
+#cookiescript_link:hover
+{
+    opacity: 1;
+}
+#cookiescript_reject:hover {
+    background-color: #242424;
+}
+#cookiescript_accept:hover,
+#cookiescript_save:hover {
+    background-color: #569856;
+}
+#cookiescript_readmore:hover,
+#cookiescript_reportlink:hover,
+#cookiescript_cookiescriptlink:hover
+{
+    color: #6BBE6B;
+}
+#cookiescript_badge {
+    position: fixed;
+    line-height: 0;
+    cursor: pointer;
+    z-index: 99999;
+    font-size: 0;
+    color: #999;
+left: 10px;
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+}
+
+#cookiescript_badgetext{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, 'Trebuchet MS', 'Segoe UI', 'Helvetica', sans-serif;
+    overflow: hidden;
+    transition-duration: 500ms;
+    white-space: nowrap;
+    padding-right: 0;
+    color: #FFFFFF;
+}
+
+#cookiescript_badgesvg{
+    width:40px;
+    height: 40px;
+}
+
+
+
+#cookiescript_badge {
+bottom: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top:10px;
+    padding-bottom: 8px;
+    padding-left:12px;
+    padding-right:12px;
+    transition-duration: 200ms;
+    box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #2d2d2d;
+}
+#cookiescript_badgetext {
+    font-size: 11px;
+    line-height: 1;
+}
+#cookiescript_badge:hover{
+    padding-bottom: 13px;
+}
+@media only screen and (max-width: 414px) {
+    #cookiescript_badge {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+
+@media print{
+    #cookiescript_injected{
+        display:none;
+    }
+}
+
+
+
+
+#cookiescript_injected .mdc-checkbox{
+    box-sizing: content-box !important;
+}
+#cookiescript_injected .mdc-checkbox__native-control {
+    z-index: 1;
+}
+#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:focus~.mdc-checkbox__background::before, #cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:indeterminate~.mdc-checkbox__background::before {
+    background-color: var(--mdc-theme-secondary, #FFFFFF);
+}
+
+.cookiescript_rtl{
+	direction:rtl;
+}
+
+#cookiescript_injected .mdc-checkbox{display:inline-block;position:relative;flex:0 0 18px;box-sizing:content-box;width:18px;height:18px;line-height:0;white-space:nowrap;cursor:pointer;vertical-align:bottom;padding:11px}#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:checked~.mdc-checkbox__background::before,#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:indeterminate~.mdc-checkbox__background::before{background-color:#FFFFFF}@supports not (-ms-ime-align:auto){.mdc-checkbox .mdc-checkbox__native-control:checked~.mdc-checkbox__background::before,#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:indeterminate~.mdc-checkbox__background::before{background-color:var(--mdc-theme-secondary, #FFFFFF)}}#cookiescript_injected .mdc-checkbox .mdc-checkbox__background{top:11px;left:11px}#cookiescript_injected .mdc-checkbox .mdc-checkbox__background::before{top:-13px;left:-13px;width:40px;height:40px}#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control{top:0;right:0;left:0;width:40px;height:40px}#cookiescript_injected .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate)~.mdc-checkbox__background{border-color:#FFFFFF;background-color:transparent}#cookiescript_injected .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background,#cookiescript_injected .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background{border-color:#FFFFFF;background-color:#FFFFFF}#cookiescript_injected .mdc-checkbox__native-control[disabled]:not(:checked):not(:indeterminate)~.mdc-checkbox__background{border-color:rgba(255,255,255,0.26);background-color:transparent}#cookiescript_injected .mdc-checkbox__native-control[disabled]:checked~.mdc-checkbox__background,#cookiescript_injected .mdc-checkbox__native-control[disabled]:indeterminate~.mdc-checkbox__background{border-color:transparent;background-color:rgba(255,255,255,0.26)}#cookiescript_injected .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark{color:#2d2d2d}#cookiescript_injected .mdc-checkbox__native-control:disabled~.mdc-checkbox__background .mdc-checkbox__checkmark{color:#2d2d2d}#cookiescript_injected .mdc-checkbox__background{display:inline-flex;position:absolute;align-items:center;justify-content:center;box-sizing:border-box;width:18px;height:18px;border:2px solid #FFFFFF;border-radius:2px;background-color:transparent;pointer-events:none;will-change:background-color,border-color;transition:background-color 90ms 0s cubic-bezier(.4,0,.6,1),border-color 90ms 0s cubic-bezier(.4,0,.6,1)}#cookiescript_injected .mdc-checkbox__background .mdc-checkbox__background::before{background-color:#000}@supports not (-ms-ime-align:auto){.mdc-checkbox__background .mdc-checkbox__background::before{background-color:var(--mdc-theme-on-surface,#000)}}#cookiescript_injected .mdc-checkbox__checkmark{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;opacity:0;transition:opacity 180ms 0s cubic-bezier(.4,0,.6,1)}#cookiescript_injected .mdc-checkbox__checkmark-path{transition:stroke-dashoffset 180ms 0s cubic-bezier(.4,0,.6,1);stroke:currentColor;stroke-width:3.12px;stroke-dashoffset:29.7833385;stroke-dasharray:29.7833385}#cookiescript_injected .mdc-checkbox__native-control:checked~.mdc-checkbox__background,#cookiescript_injected .mdc-checkbox__native-control:indeterminate~.mdc-checkbox__background{transition:border-color 90ms 0s cubic-bezier(0,0,.2,1),background-color 90ms 0s cubic-bezier(0,0,.2,1)}#cookiescript_injected .mdc-checkbox__native-control:checked~.mdc-checkbox__background .mdc-checkbox__checkmark-path,#cookiescript_injected .mdc-checkbox__native-control:indeterminate~.mdc-checkbox__background .mdc-checkbox__checkmark-path{stroke-dashoffset:0}#cookiescript_injected .mdc-checkbox__background::before{position:absolute;-webkit-transform:scale(0,0);transform:scale(0,0);border-radius:50%;opacity:0;pointer-events:none;content:"";will-change:opacity,transform;transition:opacity 90ms 0s cubic-bezier(.4,0,.6,1),-webkit-transform 90ms 0s cubic-bezier(.4,0,.6,1);transition:opacity 90ms 0s cubic-bezier(.4,0,.6,1),transform 90ms 0s cubic-bezier(.4,0,.6,1);transition:opacity 90ms 0s cubic-bezier(.4,0,.6,1),transform 90ms 0s cubic-bezier(.4,0,.6,1),-webkit-transform 90ms 0s cubic-bezier(.4,0,.6,1)}#cookiescript_injected .mdc-checkbox__native-control:focus~.mdc-checkbox__background::before{-webkit-transform:scale(1);transform:scale(1);opacity:.12;transition:opacity 80ms 0s cubic-bezier(0,0,.2,1),-webkit-transform 80ms 0s cubic-bezier(0,0,.2,1);transition:opacity 80ms 0s cubic-bezier(0,0,.2,1),transform 80ms 0s cubic-bezier(0,0,.2,1);transition:opacity 80ms 0s cubic-bezier(0,0,.2,1),transform 80ms 0s cubic-bezier(0,0,.2,1),-webkit-transform 80ms 0s cubic-bezier(0,0,.2,1)}#cookiescript_injected .mdc-checkbox__native-control{position:absolute;margin:0;padding:0;opacity:0;cursor:inherit}#cookiescript_injected .mdc-checkbox__native-control:disabled{cursor:default;pointer-events:none}#cookiescript_injected .mdc-checkbox__native-control:checked~.mdc-checkbox__background .mdc-checkbox__checkmark{transition:opacity 180ms 0s cubic-bezier(0,0,.2,1),-webkit-transform 180ms 0s cubic-bezier(0,0,.2,1);transition:opacity 180ms 0s cubic-bezier(0,0,.2,1),transform 180ms 0s cubic-bezier(0,0,.2,1);transition:opacity 180ms 0s cubic-bezier(0,0,.2,1),transform 180ms 0s cubic-bezier(0,0,.2,1),-webkit-transform 180ms 0s cubic-bezier(0,0,.2,1);opacity:1}#cookiescript_injected .mdc-checkbox__native-control:indeterminate~.mdc-checkbox__background .mdc-checkbox__checkmark{-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0;transition:opacity 90ms 0s cubic-bezier(.4,0,.6,1),-webkit-transform 90ms 0s cubic-bezier(.4,0,.6,1);transition:opacity 90ms 0s cubic-bezier(.4,0,.6,1),transform 90ms 0s cubic-bezier(.4,0,.6,1);transition:opacity 90ms 0s cubic-bezier(.4,0,.6,1),transform 90ms 0s cubic-bezier(.4,0,.6,1),-webkit-transform 90ms 0s cubic-bezier(.4,0,.6,1)}#cookiescript_injected .mdc-checkbox{-webkit-tap-highlight-color:transparent}
+#cookiescript_injected {
+    background-color: rgba(17, 17, 17, 0.5) !important;
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999996;
+}
+#cookiescript_wrapper {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 18px;
+    letter-spacing: normal;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2d2d2d;
+    z-index: 999997;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Open Sans', Arial, 'Trebuchet MS', 'Segoe UI', 'Helvetica', sans-serif;
+    box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.35);
+    color: #FFFFFF;
+    align-items: center;
+	max-height: 80%;
+    overflow-y: auto;
+    outline: none;
+}
+#cookiescript_copyright {
+    text-align: center;
+    line-height: 1;
+}
+#cookiescript_buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 5px 0;
+}
+#cookiescript_manage_wrap {
+    margin: 0 0 10px 0;
+}
+#cookiescript_header {
+    padding: 0;
+    margin: 5px auto 15px;
+    text-align: center;
+}
+#cookiescript_checkboxs {
+    margin: 0 auto 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cookiescript_checkbox {
+    margin: 0;
+}
+.cookiescript_checkbox_text {
+    margin: 0 20px 0 5px;
+}
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save {
+    margin: 5px 7px;
+    flex-shrink: 1;
+    padding: 0 17px;
+}
+#cookiescript_description {
+    margin: 0 auto 15px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.cookiescript_checkbox_label{
+    padding: 0;
+    margin: 0 10px 0 -2px;
+}
+#cookiescript_cookietablewrap {
+    transition: height 300ms 0ms, min-height 300ms 0ms, max-height 300ms 0ms, opacity 200ms 300ms;
+}
+#cookiescript_cookietablewrap.cookiescript_hidden {
+    transition: height 300ms 0ms, min-height 300ms 0ms, max-height 300ms 0ms, opacity 200ms 0ms;
+}
+
+#cookiescript_tabscontent{
+    position: relative;
+    top: -1px;
+}
+
+@media only screen and (max-width: 414px) {
+    #cookiescript_wrapper{
+        padding:15px;
+        width: 80%;
+    }
+    #cookiescript_close{
+        top:10px;
+        right: 10px;
+    }
+    #cookiescript_header{
+        margin-top:10px;
+    }
+    #cookiescript_description,
+    #cookiescript_buttons{
+        margin-bottom:10px;
+    }
+
+    #cookiescript_checkboxs{
+        flex-direction: column;
+    }
+    #cookiescript_buttons{
+        flex-wrap: wrap;
+    }
+    #cookiescript_checkboxs{
+        margin: 0 auto 15px 0;
+    }
+    .cookiescript_checkbox {
+        margin: 0 0 -10px 0;
+    }
+    #cookiescript_accept, #cookiescript_reject, #cookiescript_save {
+		width:100%;
+	}
+	#cookiescript_wrapper {
+		max-height: 100%;
+	}
+}
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save {
+	border-radius: 20px;
+}
+
+#cookiescript_wrapper {
+	border-radius: 10px;
+}
+/*IE 9 fixes*/
+@media screen and (min-width:0\0) and (min-resolution: .001dpcm) {
+	.cookiescript_checkbox{
+		display: inline-block;
+	}
+}
+
+
+    </style>
+    
+  <div id="cookiescript_badge" style="">
+              <div id="cookiescript_badgetext" data-cs-i18n-text="[]">
+        Cookie settings      </div>
+      </div>
+</body></html>

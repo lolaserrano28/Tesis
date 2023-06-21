@@ -1,0 +1,11 @@
+> n = 100
+> muestra_estimadores = matrix(NA,n,3)
+> for(i in 1:n){
++   X = vasicek(a_real,b_real,sigma_real,X0,T,N) 
++   muestra_estimadores[i,] = (MLE_vasicek(T_, X)-c(a_real,b_real, sigma_real))*N
++ }
+> mvn(data = muestra_estimadores,mvnTest = "mardia")$multivariateNormality
+             Test         Statistic            p value Result
+1 Mardia Skewness  14.3361165884682  0.158204902893079    YES
+2 Mardia Kurtosis -1.67262837978281 0.0944004764227302    YES
+3             MVN              <NA>               <NA>    YES

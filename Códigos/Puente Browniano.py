@@ -11,22 +11,23 @@ plt.style.use('ggplot')
 
 def puente_browniano(T,a,b,N=1000):
     X = [a]
-    Dt = T/1000
+    Dt = T/N
     T_ = np.linspace(0, T, N+1)
     for i in range(1,N+1):
         Z = np.random.normal(0,1)
         Xi = X[i-1] + ((b-X[i-1])/(T-T_[i-1]))*Dt + np.sqrt(Dt)*Z 
         X.append(Xi)
-    return(T_,X)
+    return(X)
 
 T = 1
 a = 0
 b = 2
 N = 1000
-plt.plot(puente_browniano(T,a,b,N)[0],puente_browniano(T,a,b,N)[1])
-plt.plot(puente_browniano(T,a,b,N)[0],puente_browniano(T,a,b,N)[1])
-plt.plot(puente_browniano(T,a,b,N)[0],puente_browniano(T,a,b,N)[1])
-plt.plot(puente_browniano(T,a,b,N)[0],puente_browniano(T,a,b,N)[1])
+T_ = np.linspace(0, T, N+1)
+plt.plot(T_,puente_browniano(T,a,b,N))
+plt.plot(T_,puente_browniano(T,a,b,N))
+plt.plot(T_,puente_browniano(T,a,b,N))
+plt.plot(T_,puente_browniano(T,a,b,N))
 plt.axhline(y = a,xmin = 0, xmax = T, linestyle = "--", color = "#458f75")
 plt.axhline(y = b,xmin = 0, xmax = T, linestyle = "--", color = "#458f75")
 plt.title("Puente Browniano: Ecuación Diferencial")

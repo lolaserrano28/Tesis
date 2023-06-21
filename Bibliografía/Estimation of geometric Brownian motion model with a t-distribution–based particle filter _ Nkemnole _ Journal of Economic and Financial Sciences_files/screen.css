@@ -1,0 +1,126 @@
+/*Aosis Sept 2017*/
+/*tablet landscape*/
+@media screen and (max-width: 1060px){
+div#advert {
+    display: none!important;
+}
+a#readmorebanner {
+    /*new changes 26Sept*/
+	/*left: 0.5%!important;*/
+	/*end new changes 26Sept*/
+}
+body[id*='pkp-author-submit'] #body {
+    margin-top: 90px!important;
+}
+
+}/*end tablet landscape*/
+
+/*tablet portrait*/
+@media screen and (max-width: 768px) {
+	div#footerleft {
+    max-width: 95%!important;
+}
+div#footerright {
+    width: 96%!important;
+}
+a#readmorebanner {
+    left: 0.01%!important;
+}
+
+/*new changes 26Sept*/
+div#rightSidebar {
+    display: none;
+}
+body div#main {
+    width: calc(100% - 180px);
+}
+div#journalDescription {
+    width: calc(100% + 59px)!important;
+}
+div#journalDescription {
+    display: none;
+}
+/*end new changes 26Sept*/
+
+}/*end tablet portrait*/
+
+/*mobile landscape*/
+@media screen and (max-width: 736px) {
+	div#advert iframe img{
+	width:50%!important;
+}
+	div#advert iframe{
+	width:50%!important;
+}
+}/*end mobile landscape*/
+
+/*mobile portrait*/
+@media screen and (max-width: 414px) {
+	
+}/*end mobile portrait*/
+
+
+@media screen and (max-width: 600px) {
+	
+}
+
+
+
+/*Added from here down 20180518 Mantis 7060*/
+
+@media screen and (max-width: 768px){
+body div#main {
+    left: 0!important;
+    width: 100%;
+}
+div#leftSidebar {
+    display: none;
+}
+
+div#smalltoplogo {
+    /*display: none;*/
+	    background-color: #fff!important;
+		z-index: 1!important;
+}
+div#libsearch {
+    display: none;
+}
+div#container {
+    min-width: 100%!important;
+}
+#header {
+    width: 100%;
+}
+#header h1 {
+    background-position: 0px 0px,100% 0px!important;
+    background-size: auto 70px,auto 30px!important;
+}
+	
+div#navbar {
+    /*width: auto!important;*/
+}
+
+#OJP_pub td.first {
+    display: none!important;
+}
+div#navbar {
+    width: 76%!important;
+}
+div#pagearea div#pageindex {
+    display: none!important;
+}
+
+/*Cookie styling*/
+#cookieAlertText {
+    float: left!important;
+    width: 100%!important;
+    line-height: 1!important;
+}
+a.cookieAlertButton {
+    float: right!important;
+    width: 25%!important;
+    margin-top: 20px!important;
+    margin-right: 15%!important;
+}
+
+}
